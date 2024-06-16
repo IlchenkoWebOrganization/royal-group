@@ -1,0 +1,28 @@
+@import 
+    './styles/normalize',
+    './styles/fonts',
+    './styles/mixins',
+    './styles/media',
+    './styles/variables',
+    './styles/utils',
+    './styles/globals';
+
+@import
+    './styles/blocks/content',
+    './styles/blocks/section',
+    './styles/blocks/ellipse-container',
+    './styles/blocks/header',
+    './styles/blocks/button',
+    './styles/blocks/burger-button',
+    './styles/blocks/neon-spacer';
+
+
+@import 
+    './styles/index-styles/hero',
+    './styles/index-styles/financing-quote',
+    './styles/index-styles/payment-quote',
+    './styles/index-styles/join-button',
+    './styles/index-styles/circular-progress-bar',
+    './styles/index-styles/circular-description',
+    './styles/index-styles/numbers',
+    './styles/index-styles/block-conclusion';

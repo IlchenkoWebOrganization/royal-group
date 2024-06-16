@@ -1,0 +1,107 @@
+.header {
+    padding-top: 60px;
+    margin-bottom: 50px;
+
+    @include desktop {
+        padding-top: 30px;
+    }
+
+    @include tablet {
+        padding-top: 20px;
+    }
+
+    @include mobile {
+        padding-top: 10px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+
+        align-items: center;
+
+        @include desktop {
+            column-gap: 30px
+        }
+
+        @include tablet {
+            column-gap: 30px;
+            padding-inline: 5px;
+        }
+    }
+
+    &__logo {
+        @include font-settings(32px, 'DaysOne');
+
+        @include desktop {
+            font-size: 28px;
+        }
+        
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 30px;
+            
+            max-width: 300px;
+
+            margin-left: 9px;
+        }
+    }
+
+    &__menu {
+        margin: auto;
+
+        @include font-settings(20px, 'Manrope Light');
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            
+            @include desktop {
+                font-size: 17px;
+
+                column-gap: 25px;
+            }
+
+            @include tablet {
+                font-size: 14px;
+
+                column-gap: 17px;
+            }
+
+        }
+
+        &-link {
+            position: relative;
+            
+            display: inline-flex;
+            align-items: center;
+
+            height: 60px;
+
+            @include hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition-duration: inherit;
+            }
+        }
+
+    }
+
+}

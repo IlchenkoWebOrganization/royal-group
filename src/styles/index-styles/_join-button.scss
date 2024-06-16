@@ -1,0 +1,89 @@
+.join-button {
+    @include reset-button();
+
+    @include hover {
+        background-color: rgba(124, 114, 255, 0.1);
+
+        border-color: rgba(124, 114, 255, 1);
+
+        box-shadow: 0 8px 16px rgba(124, 114, 255, 0.6);
+
+        transform: translateY(-3px);
+        transition: all 0.3s ease;
+        
+        .join-button__circle {
+            background-color: rgba(124, 114, 255, 0.2);
+
+            box-shadow: 0 0 70px rgba(124, 114, 255, 0.8),
+                        0 0 90px rgba(124, 114, 255, 1),
+                        0 0 110px rgba(124, 114, 255, 0.6);
+
+            &-plus {
+                background-color: var(--color-dark);
+                color: var(--color-light);
+
+                &::before,
+                &::after { 
+                    background-color: rgba(124, 114, 255, 1);
+                }
+            }
+        }
+    }
+    
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+
+    background: transparent;
+    
+    border: 1px solid rgba(230, 237, 243, 1);
+    border-radius: 88.1px;
+    
+    padding-inline: 10px 20px;
+    padding-block: 10px;
+
+    margin-bottom: 15px;
+
+    @include font-settings(inherit, 'Manrope SemiBold', var(--color-light));
+
+    &__circle {
+        &--purple-blur-left-shadow { // Нужно исправить, так использовать модификаторы нельзя
+            box-shadow: 0 0 70px rgba(124, 114, 255, 0.8),
+            0 0 90px rgba(124, 114, 255, 1),
+            0 0 110px rgba(124, 114, 255, 0.6);
+        }
+
+        @include circle(64px);
+
+        background-color: var(--color-light);
+        
+        padding: 12px;
+
+        &-plus {
+            @include circle(40px);
+
+            position: relative;
+
+            border: var(--color-dark) 5px solid;
+
+            &::before,
+            &::after {
+              content: '';
+
+              @include abs-center;
+
+              width: 70%;
+              height: 5px;
+
+              background-color: var(--color-dark);
+            }
+          
+            &::before {
+                -webkit-transform: rotate(90deg) translateY(200%) translateX(-10%);
+                transform: rotate(90deg) translateY(200%) translateX(-10%);
+            }
+        }
+    }
+    
+}

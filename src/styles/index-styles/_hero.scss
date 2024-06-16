@@ -1,0 +1,17 @@
+.hero {
+
+    &__quotes {
+        @include flex-column(3px);
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        @include font-settings(37px, 'Neutral Face', var(--color-gray));
+
+        b {
+            color: var(--color-light);
+        }
+
+    }
+
+}

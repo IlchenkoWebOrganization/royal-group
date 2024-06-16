@@ -1,0 +1,86 @@
+.circular-progress-bar {
+    width: 280px;
+    height: 280px;
+
+    position: relative;
+
+    color: transparent;
+    background-color: transparent;
+
+    &__outer {
+        width: 280px;
+        height: 280px;
+
+        background-color: none;
+
+        border-radius: 50%;
+
+        padding: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 200px;
+        height: 200px;
+
+        border-radius: 50%;
+
+        box-shadow: inset 4px 4px 6px -1px rgba(55, 55, 105, 1),
+                    inset -4px -4px 6px -1px rgba(55, 55, 105, 1),
+                    -0.5px -0.5px 0px rgba(55, 55, 105, 1),
+                    0.5px 0.5px 0px rgba(55, 55, 105, 1),
+                    0px 12px 10px -10px rgba(55, 55, 105, 1);
+    }
+
+    &__number {
+        @include font-settings(34px, 'Manrope Bold', linear-gradient(89.53deg, #C3A9FF 12.17%, #591EFF 151.86%), true);
+
+        text-align: center;
+    }
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: rotate(-90deg)
+    }
+
+    circle {
+        fill: none;
+        stroke-width: 40px;
+    }
+
+    &__under-circle {
+
+        circle {
+            stroke: rgba(55, 55, 105, 1);
+        }
+
+    }
+
+    &__gradient-circle {
+        
+        circle {
+            stroke: url(#CircularGradientColor);
+            stroke-dasharray: 753.6;
+            stroke-dashoffset: 753.6;
+        }
+
+        &.visible {
+            circle {
+                animation: anim 0.8s linear forwards;
+            }
+        }
+
+        @keyframes anim{
+            100% {
+                stroke-dashoffset: 376.8;
+            }
+        }
+    }
+
+}

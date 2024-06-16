@@ -1,0 +1,31 @@
+.button {
+    @include flex-center(true);
+
+    height: var(--button-height);
+    
+    padding-inline: var(--button-inline-padding);
+    
+    @include font-settings(20px, 'Manrope Medium', var(--color-light));
+
+    background-color: transparent;
+
+    border: 1px solid var(--color-light);
+    border-radius: var(--default-border-radius);
+
+
+    @include desktop {
+        font-size: 18px;
+        padding-inline: 20px;
+    }
+
+    @include tablet {
+        font-size: 15px;
+        padding-inline: 10px;
+    }
+
+    @include hover {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+    }
+
+}

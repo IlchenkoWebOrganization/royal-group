@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investments</title>
+  <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="/">Royal Group</a>
+
+      <nav class="header__menu hidden-mobile">
+        <ul class="header__menu-list">
+          <li class="header__menu_item">
+            <a href="" class="header__menu-link">Что я получу?</a>
+          </li>
+          <li class="header__menu_item">
+            <a href="" class="header__menu-link">Выгоды</a>
+          </li>
+          <li class="header__menu_item">
+            <a href="" class="header__menu-link">Как это работает?</a>
+          </li>
+          <li class="header__menu_item">
+            <a href="" class="header__menu-link">Вопрос-ответ</a>
+          </li>
+          <li class="header__menu_item">
+            <a href="" class="header__menu-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__button button hidden-mobile" type="button">
+        Связаться
+      </button>
+
+      <button class="header__burger-menu burger-button visible-mobile" type="button">
+        <span class="visually-hidden">Open navigation menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    
+    <section class="section container">
+      <div class="section__body">
+        <div class="hero" id="heroBlockTrigger">
+          
+          <ul class="hero__quotes">
+            <li class="hero__item financing-quote">
+              <div class="financing-quote__info">Помогаем найти <b>финансирование</b> для<br>предпринимателей <b>от 1 до
+                  100 млн рублей</b></div>
+              <div class="financing-quote__stripes">
+                <img class="financing-quote__arrow" src="./icons/arrow-financing-quote.svg" alt="">
+                <img class="financing-quote__arrow" src="./icons/arrow-financing-quote.svg" alt="">
+                <img class="financing-quote__arrow" src="./icons/arrow-financing-quote.svg" alt="">
+              </div>
+            </li>
+            <li class="hero__item payment-quote">
+              <div class="payment-quote__arrow neon-spacer neon-spacer--payment-quote"></div>
+              <div class="payment-quote__info"><b>Выплачиваем от 2 до 5%</b> нашим партнерам<br>за каждого приведенного
+                клиента</div>
+            </li>
+          </ul>
+
+          <button class="hero__join join-button">
+            <div class="join-button__circle join-button__circle--purple-blur-left-shadow">
+              <div class="join-button__circle-plus">
+
+              </div>
+            </div>
+            <p class="join-button__info">Стать партнером или присоединиться к команде</p>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section container">
+      <div class="section__body">
+        <div class="numbers" id="numbersBlockTrigger">
+          
+          <div class="numbers__line neon-spacer neon-spacer--numbers-arrow" id="numbersArrow">
+            
+          </div>
+          
+          <div class="numbers__main" id="numbersContentTrigger">
+            
+            <div class="numbers__content">
+              <div class="numbers__year-result-quote">
+                Только за 2024 год, мы уже <b>ПРИВЛЕКАЛИ БОЛЕЕ 500 МЛН РУБ</b> предпринимателям по всей России
+              </div>
+    
+              <div class="numbers__circular circular-progress-bar">
+                <div class="circular-progress-bar__outer">
+                  <div class="circular-progress-bar__inner">
+                    <div class="circular-progress-bar__number">
+                      500 МЛН РУБ
+                    </div>
+                  </div>
+                </div>
+    
+                <svg class="circular-progress-bar__under-circle" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                  width="280px" height="280px">
+                  <circle cx="140" cy="140" r="120" stroke="rgba(55, 55, 105, 1)" stroke-width="40" fill="none"
+                    stroke-linecap="round" />
+                </svg>
+    
+    
+                <svg class="circular-progress-bar__gradient-circle" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                  width="280px" height="280px">
+                  <defs>
+                    <linearGradient id="CircularGradientColor" gradientTransform="rotate(90)">
+                      <stop offset="12.17%" stop-color="#C3A9FF" />
+                      <stop offset="151.86%" stop-color="#591EFF" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="140" cy="140" r="120"
+                    stroke="url(#CircularGradientColor)" stroke-width="40" fill="none" stroke-linecap="round" />
+                </svg>
+    
+              </div>
+    
+              <div class="numbers__partners-result circular-description">
+    
+                <div class="circular-description__number">
+                  300 млн рублей
+                </div>
+    
+                <div class="circular-description__text">
+                  Из которых, 300 млн - это <b>БЛАГОДАРЯ НАШИМ ПАРТНЁРАМ</b>
+                </div>
+    
+              </div>
+            </div>
+
+            <div class="numbers__conclusion block-conclusion block-conclusion--bold-blue">
+              <div class="block-conclusion__line-divergence">
+                <img class="block-conclusion__img" src="./images/numbers-footer-divergence.svg" alt="">
+              </div>
+      
+              <p class="block-conclusion__text">За 4 месяца, наши партнеры заработали - <b>более 7 млн рублей</b>. И при этом <b>потратив не более 1 часа в день,</b> написав потенциальным клиентам</p>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="ellipse">
+    <div class="ellipse__container">
+      <div class="ellipse__shadow"></div>
+      <div class="ellipse__main"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

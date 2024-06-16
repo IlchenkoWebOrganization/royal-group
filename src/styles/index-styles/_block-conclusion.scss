@@ -1,0 +1,28 @@
+.block-conclusion {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+
+    &__line-divergence {
+        height: 298px;
+        min-width: 68px;
+
+        img {
+            height: 100%;
+        }
+
+        @include appear('', 0, 'bottom', 200px, 0, 0, 1s);
+    }
+
+    &__text {
+        @include font-settings(32px, 'Manrope Light');
+
+        @include appear('right', -50%, '', 0, 0, 0, 0.7s);
+    }
+
+    &--bold-blue {
+        b {
+            @include font-settings(inherit, 'Manrope Bold', linear-gradient(89.53deg, #A9D1FF 12.17%, #1E78FF 151.86%), true);
+        }
+    }
+}

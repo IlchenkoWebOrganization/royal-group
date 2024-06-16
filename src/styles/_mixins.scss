@@ -1,0 +1,149 @@
+// Динамически вычисляет значения шрифта, учитывая максимально допустимое и минимально допустимое значение
+@mixin fluid-text($max: 48, $min: 16) {
+  font-size: clamp(#{$min}px, calc(#{$max} / 1440 * 100vw), #{$max}px);
+}
+
+// Сбрасывает все базовые стили ссылки
+@mixin reset-link {
+  color: inherit; // цвет текста наследуется от родительского элемента
+
+  &,
+  &:hover {
+    text-decoration: none; // при наведении на элемент, к которому применён миксин не будет никаких подчёркиваний
+  }
+}
+
+// Сбрасывает все базовые стили кнопки
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent; // прозрачный цвет фона
+  border: none;
+}
+
+// Объявляет flex-контейнер и центрирует все элементы внутри него
+@mixin flex-center($isInline: false) {
+  @if $isInline {
+    display: inline-flex;
+  }
+
+  @else {
+    display: flex;
+  }
+
+  justify-content: center;
+  align-items: center;
+}
+
+// Позиционирование absolute-элемента по центру родительского relative блока
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+// Задаёт блоку одинковую ширину и высоту
+@mixin square($size) {
+  width: $size;
+  aspect-ratio: 1; // задаёт соотношение сторон блока в нашем случае 1 к 1
+}
+
+// Создаёт круг нужной ширины и высоты
+@mixin circle($size) {
+  @include square($size);
+  border-radius: 50%;
+}
+
+// Скрывает элемент правильно и по всем стандартам
+@mixin visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+// объявляет вертикальный flex-контейнер с отступами между внутренними элементами
+@mixin flex-column($rowGap: 20px) {
+  display: flex;
+  flex-direction: column;
+  row-gap: $rowGap;
+}
+
+
+// Настройка шрифта (font-weight уже вшит в font-family)
+@mixin font-settings($size: inherit, $family: inherit, $colorOrGradient: inherit, $gradient: false) {
+  font-family: $family;
+  font-size: $size;
+
+  @if($gradient) {
+    background: $colorOrGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @else {
+    color: $colorOrGradient;
+  }
+}
+
+
+// Линия между элементами с равномерным отступом между ними.
+// Применяется исключительно на верхнем элементе 
+@mixin horizontal-line-between($paddingAndMarginBottom, $borderColor, $borderWidth, $borderStyle) {
+  padding-bottom: $paddingAndMarginBottom;
+  margin-bottom: $paddingAndMarginBottom;
+  border-bottom: $borderColor $borderWidth $borderStyle;
+}
+
+
+// Анимация появления блока
+@mixin appear($x-direction, $x-distance, $y-direction, $y-distance, $final-x: 0, $final-y: 0, $time: var(--transition-duration)) {
+  position: relative;
+  opacity: 0;
+  transition: all $time ease;
+
+  // Initial positions based on direction and distance
+  @if $x-direction =='left' {
+    left: $x-distance;
+  }
+
+  @else if $x-direction =='right' {
+    right: $x-distance;
+  }
+
+  @if $y-direction =='top' {
+    top: $y-distance;
+  }
+
+  @else if $y-direction =='bottom' {
+    bottom: $y-distance;
+  }
+
+  &.visible {
+    @if $x-direction =='left' {
+      left: $final-x;
+    }
+
+    @else if $x-direction =='right' {
+      right: $final-x;
+    }
+
+    @if $y-direction =='top' {
+      top: $final-y;
+    }
+
+    @else if $y-direction =='bottom' {
+      bottom: $final-y;
+    }
+
+    opacity: 1;
+  }
+}

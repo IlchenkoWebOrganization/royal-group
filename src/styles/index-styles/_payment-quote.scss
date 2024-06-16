@@ -1,0 +1,9 @@
+.payment-quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+        @include appear('right', -20%, '', 0, 0, 0, 0.6s);
+    }
+}

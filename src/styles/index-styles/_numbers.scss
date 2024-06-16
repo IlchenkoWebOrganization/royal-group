@@ -1,0 +1,38 @@
+.numbers {
+    display: flex;
+    column-gap: 100px;
+
+    &__content {
+        margin-top: 150px;
+
+        @include font-settings(32px, inherit, var(--color-gray));
+
+        display: flex;
+        justify-content: space-between;
+        column-gap: 60px;
+
+        b {
+            color: var(--color-light);
+        }
+    }
+
+    &__year-result-quote {
+        max-width: 370px;
+    }
+
+    &__partners-result {
+        max-width: 340px;
+    }
+
+    &__year-result-quote, &__circular {
+        @include appear('', 0, 'bottom', -300px, 0, 0, 0.7s);
+    }
+
+    &__partners-result {
+        @include appear('', 0, 'bottom', -200px, 0, 0, 1.1s);
+    }
+
+    &__conclusion {
+        margin-left: -101px;
+    }
+}

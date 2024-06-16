@@ -1,0 +1,36 @@
+:root {
+    --color-gray: rgba(152, 161, 176, 1);
+    --color-light: rgba(230, 237, 243, 1);
+    --color-dark: rgba(13, 17, 22, 1);
+
+    --font-base: 'Manrope';
+
+    --transition-duration: 0.3s;
+
+
+    // Параметры контейнера
+    --container-width: 1240px;
+    --container-padding-x: 20px;
+
+    --section-padding-y: 70px;
+
+
+    // Кнопки
+    --button-height: 46px;
+    --button-inline-padding: 24px;
+
+    // Рамки
+    --default-border-radius: 8px;
+
+    @include desktop {
+        --button-inline-padding: 20px;
+    }
+
+    @include tablet {
+        --button-inline-padding: 17px;
+    }
+
+    @include mobile {
+        --section-padding-y: 30px;
+    }
+}
