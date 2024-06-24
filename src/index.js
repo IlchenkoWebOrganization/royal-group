@@ -1,7 +1,7 @@
 import './index.html';
 import './index.scss';
 
-import { Controller, Scene } from 'scrollmagic';
+import { Controller } from 'scrollmagic';
 
 import { addAnimationsWithTrigger } from './scripts/main-scripts/createAnimationsModule';
 
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const firstPotentialPartnerPopup = document.getElementById("firstPotentialPartnerModal");
     const firstPotentialPartnerPopupOpenBtn = document.getElementById("openFirstPotentialPartnerBtn");
 
+
     const secondPotentialPartnerPopup = document.getElementById("secondPotentialPartnerModal");
     const secondPotentialPartnerPopupOpenBtn = document.getElementById("openSecondPotentialPartnerBtn");
 
@@ -25,18 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
     new Popup(secondPotentialPartnerPopup, secondPotentialPartnerPopupOpenBtn)
 
 
+
+    
     addAnimationsWithTrigger(animationController, '#heroBlockTrigger', [
         '.financing-quote__info',
         '.financing-quote__stripes',
         '.payment-quote__info',
         '.neon-spacer--payment-quote'
     ]);
-
-
-    addAnimationsWithTrigger(animationController, '#numbersBlockTrigger', [
-        '.ellipse__main',
-        '.ellipse__shadow'
-    ], 'expanded')
 
 
     addAnimationsWithTrigger(animationController, '#numbersBlockTrigger', [
@@ -50,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function () {
     ]);
 
 
+    addAnimationsWithTrigger(animationController, '#numbersBlockTrigger', [
+        '.ellipse__main',
+        '.ellipse__shadow'
+    ], 'expanded');
+
+
     addAnimationsWithTrigger(animationController, '#potentialPartnersBlockTrigger', [
         '#potentialPartnersLine',
         '#potentialPartnersHeader',
@@ -61,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     addAnimationsWithTrigger(animationController, '#impactBlockTrigger', [
-        '#impactHeader',
         '#impactLine'
     ]);
 
