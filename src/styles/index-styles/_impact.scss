@@ -1,0 +1,29 @@
+.impact {
+
+    &__list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        gap: 24px;
+        height: 2800px;
+        align-items: center;
+    }
+
+    &__item {
+        width: 500px;
+        box-sizing: border-box;
+        background: #dedede;
+        height: 220px;
+        border-radius: 32px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: medium;
+        color: #FFF;
+    }
+}

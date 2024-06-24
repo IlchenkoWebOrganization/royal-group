@@ -1,5 +1,7 @@
 .section {
-    @include flex-column(80px);
+    @include flex-column(48px);
+
+    padding-top: 18px;
 
     @include tablet {
         row-gap: 40px;
@@ -9,11 +11,14 @@
         row-gap: 30px;
     }
 
-
     &__header {
         display: flex;
         align-items: center;
-        column-gap: 80px;
+        column-gap: 50px;
+
+        margin-left: 20px;
+
+        @include appear('right', -100px, 'top', 200px, 0, 0, 1s);
 
         @include tablet {
             column-gap: 40px;
@@ -26,15 +31,19 @@
         }
     }
 
-    &__description {
-        max-width: 580px;
+    &__icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        @include tablet-with-min {
-            max-width: 450px;
+    &__body {
+        display: flex;
+
+        &--no-flex {
+            display: block;
         }
     }
 
-    &--hidden-x {
-        overflow-x: hidden;
-    }
 }

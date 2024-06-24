@@ -25,11 +25,11 @@
     }
 
     &__year-result-quote, &__circular {
-        @include appear('', 0, 'bottom', -300px, 0, 0, 0.7s);
+        @include appear('', 0, 'bottom', -300px, 0, 0, 1.1s);
     }
 
     &__partners-result {
-        @include appear('', 0, 'bottom', -200px, 0, 0, 1.1s);
+        @include appear('', 0, 'bottom', -200px, 0, 0, 1.3s);
     }
 
     &__conclusion {

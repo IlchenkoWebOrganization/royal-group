@@ -1,0 +1,13 @@
+.header-question {
+    &--blue-bold {
+        b {
+            color: rgba(79, 149, 255, 1);
+        }
+    }
+
+    &--purple-bold {
+        b {
+            color: rgba(124, 114, 255, 1);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.header-icon {
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+
+    &--blue-shadow {
+        img {
+            filter: drop-shadow(0 0 20px rgba(0, 150, 255, 1))
+                    drop-shadow(0 0 20px rgba(0, 150, 255, 0.75))
+                    drop-shadow(0 0 20px rgba(0, 150, 255, 0.5));
+        }
+    }
+
+    &--purple-shadow {
+        img {
+            filter: drop-shadow(0 0 20px rgba(98, 90, 255, 1))
+                    drop-shadow(0 0 20px rgba(98, 90, 255, 0.75))
+                    drop-shadow(0 0 20px rgba(98, 90, 255, 0.5));
+              
+        }
+        
+    }
+
+}

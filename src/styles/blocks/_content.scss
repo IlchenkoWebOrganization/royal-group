@@ -1,8 +1,6 @@
 .content {
     position: relative;
     z-index: 1; /* Устанавливаем z-index, чтобы контент был выше эллипса на первом экране */
-    overflow-x: hidden;
-    overflow-y: hidden;
 
-    margin-bottom: 100px; // Это надо убрать, в прод не пойдёт
+    margin-bottom: 1000px; // Это надо убрать, в прод не пойдёт
 }

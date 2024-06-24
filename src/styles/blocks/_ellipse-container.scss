@@ -11,31 +11,27 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        overflow-x: hidden;
     }
 
     &__main {
-        width: 2343px;
-        height: 895px;
+        width: 150vw;
+        height: 100vh;
         background: var(--color-dark);
         border-radius: 50%;
         position: absolute;
         top: 700px;
         transition: width 0.8s ease-out, height 0.8s ease-out, top 0.8s ease-out;
 
-        overflow: hidden;
-
-        overflow-x: hidden;
-
         &.expanded {
-            width: 3000px;
+            width: 200vw;
+            height: 150vh;
             top: -10%;
         }
     }
 
     &__shadow {
-        width: 1623px;
-        height: 895px;
+        width: 100vw;
+        height: 100vh;
         background: var(--color-dark);
         border-radius: 50%;
         box-shadow: 0 0 100px rgba(124, 114, 255, 0.5), // Внешнее  свечение 
@@ -46,8 +42,8 @@
         transition: width 0.8s ease-out, height 0.8s ease-out, top 0.8s ease-out;
 
         &.expanded {
-            height: 300px;
-            width: 3000px;
+            height: 20vh;
+            width: 200vw;
             top: -30%;
         }
     }

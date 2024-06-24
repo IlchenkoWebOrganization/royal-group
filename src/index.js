@@ -1,13 +1,29 @@
 import './index.html';
 import './index.scss';
 
-import { Controller } from 'scrollmagic';
+import { Controller, Scene } from 'scrollmagic';
 
 import { addAnimationsWithTrigger } from './scripts/main-scripts/createAnimationsModule';
 
-document.addEventListener('DOMContentLoaded', function() {
+import Popup from './scripts/main-scripts/popup';
+
+
+document.addEventListener('DOMContentLoaded', function () {
 
     const animationController = new Controller();
+
+
+    const firstPotentialPartnerPopup = document.getElementById("firstPotentialPartnerModal");
+    const firstPotentialPartnerPopupOpenBtn = document.getElementById("openFirstPotentialPartnerBtn");
+
+    const secondPotentialPartnerPopup = document.getElementById("secondPotentialPartnerModal");
+    const secondPotentialPartnerPopupOpenBtn = document.getElementById("openSecondPotentialPartnerBtn");
+
+
+    new Popup(firstPotentialPartnerPopup, firstPotentialPartnerPopupOpenBtn)
+
+    new Popup(secondPotentialPartnerPopup, secondPotentialPartnerPopupOpenBtn)
+
 
     addAnimationsWithTrigger(animationController, '#heroBlockTrigger', [
         '.financing-quote__info',
@@ -16,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '.neon-spacer--payment-quote'
     ]);
 
-    
+
     addAnimationsWithTrigger(animationController, '#numbersBlockTrigger', [
         '.ellipse__main',
         '.ellipse__shadow'
@@ -29,8 +45,24 @@ document.addEventListener('DOMContentLoaded', function() {
         '.numbers__circular',
         '.circular-progress-bar__gradient-circle',
         '.numbers__partners-result',
-        '.block-conclusion__line-divergence',
-        '.block-conclusion__text'
+        '#numbersConclusionDivergence',
+        '#numbersConclusionText'
+    ]);
+
+
+    addAnimationsWithTrigger(animationController, '#potentialPartnersBlockTrigger', [
+        '#potentialPartnersLine',
+        '#potentialPartnersHeader',
+        '.potential-partner-card--1',
+        '.potential-partner-card--2',
+        '#potentialPartnersConclusionDivergence',
+        '#potentialPartnersConclusionText'
+    ]);
+
+
+    addAnimationsWithTrigger(animationController, '#impactBlockTrigger', [
+        '#impactHeader',
+        '#impactLine'
     ]);
 
 });

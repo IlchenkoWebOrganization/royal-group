@@ -8,16 +8,20 @@
     './styles/globals';
 
 @import
+    './styles/blocks/grid',
     './styles/blocks/content',
     './styles/blocks/section',
+    './styles/blocks/sticky-section',
     './styles/blocks/ellipse-container',
     './styles/blocks/header',
     './styles/blocks/button',
     './styles/blocks/burger-button',
-    './styles/blocks/neon-spacer';
+    './styles/blocks/neon-spacer',
+    './styles/blocks/popup';
 
 
 @import 
+    './styles/index-styles/header-question',
     './styles/index-styles/hero',
     './styles/index-styles/financing-quote',
     './styles/index-styles/payment-quote',
@@ -25,4 +29,9 @@
     './styles/index-styles/circular-progress-bar',
     './styles/index-styles/circular-description',
     './styles/index-styles/numbers',
-    './styles/index-styles/block-conclusion';
+    './styles/index-styles/block-conclusion',
+    './styles/index-styles/header-icon',
+    './styles/index-styles/potential-partners',
+    './styles/index-styles/potential-partner-card',
+    './styles/index-styles/impact',
+    './styles/index-styles/impact-card';
