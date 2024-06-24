@@ -14,12 +14,12 @@
     }
 
     &__main {
-        width: 150vw;
-        height: 100vh;
+        width: 200vw;
+        height: 150vh;
         background: var(--color-dark);
         border-radius: 50%;
         position: absolute;
-        top: 700px;
+        top: 680px;
         transition: width 0.8s ease-out, height 0.8s ease-out, top 0.8s ease-out;
 
         &.expanded {
@@ -30,19 +30,17 @@
     }
 
     &__shadow {
-        width: 100vw;
-        height: 100vh;
+        width: 110vw;
+        height: 70vh;
         background: var(--color-dark);
         border-radius: 50%;
-        box-shadow: 0 0 100px rgba(124, 114, 255, 0.5), // Внешнее  свечение 
-                    0 0 200px rgba(124, 114, 255, 0.3), // Более размытое свечение
-                    0 0 300px rgba(124, 114, 255, 0.1); // Еще более размытое свечение 
+        box-shadow: 0 0 150px rgba(124, 114, 255, 0.5); // Более размытое свечение
         position: absolute;
-        top: 700px;
+        top: 680px;
         transition: width 0.8s ease-out, height 0.8s ease-out, top 0.8s ease-out;
 
         &.expanded {
-            height: 20vh;
+            height: 70vh;
             width: 200vw;
             top: -30%;
         }
