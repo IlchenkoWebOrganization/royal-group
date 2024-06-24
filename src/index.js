@@ -64,7 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     addAnimationsWithTrigger(animationController, '#impactBlockTrigger', [
-        '#impactLine'
+        '#impactIcon',
+        '#impactLine',
+        '#impactHeader',
+        '#impactJoinButton',
+        '#impactList'
     ]);
 
 });

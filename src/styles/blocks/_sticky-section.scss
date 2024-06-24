@@ -18,6 +18,16 @@
 
     &__icon {
         margin-left: -7px;
+
+        position: relative;
+        opacity: 0;
+        transform: rotate(90deg);
+        transition: all 0.7s ease;
+
+        &.visible {
+            transform: rotate(0deg);
+            opacity: 1;
+        }
     }
 
     &__line {
@@ -38,6 +48,14 @@
         @include flex-column(40px);
     }
 
+    &__title {
+        @include appear('right', 0, 'top', 200px, 0, 0, 1s);
+    }
+
+    &__join {
+        @include appear('right', 0, 'top', 200px, 0, 0, 1s);
+    }
+
     &__list {
         position: relative;
 
@@ -45,6 +63,8 @@
         align-items: center;
 
         height: 2400px;
+
+        @include appear('right', 0, 'top', 200px, 0, 0, 1s);
     }
 
     &__item {
