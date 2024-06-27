@@ -44,6 +44,11 @@
         &--no-flex {
             display: block;
         }
+
+    }
+
+    &__line {
+        min-width: 6px;
     }
 
 }

@@ -12,12 +12,14 @@
     './styles/blocks/content',
     './styles/blocks/section',
     './styles/blocks/sticky-section',
+    './styles/blocks/section-bg',
     './styles/blocks/ellipse',
     './styles/blocks/header',
     './styles/blocks/button',
     './styles/blocks/burger-button',
     './styles/blocks/neon-spacer',
-    './styles/blocks/popup';
+    './styles/blocks/popup',
+    './styles/blocks/btn-arrow-with-hover';
 
 
 @import 
@@ -33,4 +35,9 @@
     './styles/index-styles/header-icon',
     './styles/index-styles/potential-partners',
     './styles/index-styles/potential-partner-card',
-    './styles/index-styles/impact-card';
+    './styles/index-styles/impact-card',
+    './styles/index-styles/benefits',
+    './styles/index-styles/benefit-card',
+    './styles/index-styles/cases',
+    './styles/index-styles/case-card',
+    './styles/index-styles/slider';

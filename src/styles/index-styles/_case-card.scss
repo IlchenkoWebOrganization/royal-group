@@ -1,0 +1,70 @@
+.case-card {
+    max-width: 700px;
+
+    min-width: 700px;
+    border-radius: 20px;
+
+    border: 2px solid rgba(48, 61, 48, 1);
+
+    background-color: var(--color-dark);
+
+    opacity: 0.9;
+
+    position: relative;
+
+    padding-block: 55px;
+    padding-inline: 60px;
+
+    &__ellipse {
+        height: 270px;
+        width: 330px;
+
+        background: rgba(102, 199, 55, 1);
+
+        opacity: 0.5;
+
+        border-radius: 50%;
+        position: absolute;
+
+        top: -213px;
+        left: 19%;
+
+        z-index: -1;
+
+        filter: blur(40px); /* Добавлено размытие */
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+        z-index: 10;
+        height: 100%;
+    }
+
+    &__avatar {
+        width: 90px; /* Желаемый размер аватара */
+        height: 90px; /* Желаемый размер аватара */
+        border-radius: 50%; /* Круглая форма */
+        border: 1px solid var(--color-gray);
+        padding: 4px;
+
+        img {
+            width: 80px; /* Желаемый размер аватара */
+            height: 80px; /* Желаемый размер аватара */
+            border-radius: 50%; /* Круглая форма */
+            object-fit: cover; /* Убедиться, что изображение не искажается */
+        }
+    }
+
+    &__info {
+        @include font-settings(24px, 'Manrope Light');
+
+        text-align: left;
+    }
+
+    &__btn {
+        align-self: flex-start;
+    }
+}

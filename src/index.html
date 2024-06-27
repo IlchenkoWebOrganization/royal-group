@@ -86,12 +86,12 @@
     <section class="section container">
       <div class="section__body">
 
+        <div class="section__line neon-spacer neon-spacer--numbers-arrow" id="numbersArrow">
+
+        </div>
+
         <div class="section__content">
           <div class="numbers" id="numbersBlockTrigger">
-
-            <div class="numbers__line neon-spacer neon-spacer--numbers-arrow" id="numbersArrow">
-
-            </div>
 
             <div class="numbers__main" id="numbersContentTrigger">
 
@@ -197,12 +197,12 @@
                 Владельцы онлайн-школ, обучающих программ, бизнес-франшизы
               </p>
 
-              <button class="potential-partner-card__button" id="openFirstPotentialPartnerBtn">
-                <div class="potential-partner-card__button-text">
+              <button class="potential-partner-card__button btn-arrow-with-hover" id="openFirstPotentialPartnerBtn">
+                <div class="btn-arrow-with-hover__text">
                   Что может поменяться
                 </div>
 
-                <div class="potential-partner-card__arrow">
+                <div class="btn-arrow-with-hover__arrow">
 
                 </div>
               </button>
@@ -222,11 +222,11 @@
                 Напрямую работаете с бизнесом
               </p>
 
-              <button class="potential-partner-card__button" id="openSecondPotentialPartnerBtn">
-                <span class="potential-partner-card__button-text">
+              <button class="potential-partner-card__button btn-arrow-with-hover" id="openSecondPotentialPartnerBtn">
+                <span class="btn-arrow-with-hover__text">
                   Что может поменяться
                 </span>
-                <div class="potential-partner-card__arrow">
+                <div class="btn-arrow-with-hover__arrow">
 
                 </div>
               </button>
@@ -254,94 +254,311 @@
     </section>
 
     <section class="sticky-section container" id="impactBlockTrigger">
-        
-        <div class="sticky-section__line-container">
 
-          <div class="sticky-section__line-wrapper">
+      <div class="sticky-section__line-container">
 
-            <div class="sticky-section__icon header-icon header-icon--purple-shadow" id="impactIcon">
-              <img src="./icons/impact-header-icon.svg" alt="">
-            </div>
-            
-            <div class="sticky-section__line neon-spacer neon-spacer--impact-arrow" id="impactLine"></div>
-            
+        <div class="sticky-section__line-wrapper">
+
+          <div class="sticky-section__icon header-icon header-icon--purple-shadow" id="impactIcon">
+            <img src="./icons/impact-header-icon.svg" alt="">
           </div>
-          
+
+          <div class="sticky-section__line neon-spacer neon-spacer--impact-arrow" id="impactLine"></div>
+
         </div>
 
-        <div class="sticky-section__header-container">
-          
-          <div class="sticky-section__header-wrapper">
-            <h1 id="impactHeader" class="sticky-section__title section__question header-question header-question--purple-bold">
-              <b>На что</b> это повлияет?
-            </h1>
+      </div>
+
+      <div class="sticky-section__header-container">
+
+        <div class="sticky-section__header-wrapper">
+          <h1 id="impactHeader"
+            class="sticky-section__title section__question header-question header-question--purple-bold">
+            <b>На что</b> это повлияет?
+          </h1>
+
+          <button id="impactJoinButton" class="sticky-section__join join-button">
+            <div class="join-button__circle">
+              <div class="join-button__circle-plus"></div>
+            </div>
+            <p class="join-button__info">Стать партнером или присоединиться к команде</p>
+          </button>
+        </div>
+
+      </div>
+
+      <div id="impactList" class="sticky-section__list">
+        <div class="sticky-section__item impact-card impact-card--1">
+          <h2 class="impact-card__number">
+            <span>01</span>
+          </h2>
+          <div class="impact-card__text">
+            Вы начнете дозарабатывать от 70.000р в месяц
+          </div>
+        </div>
+
+        <div class="sticky-section__item impact-card impact-card--2">
+          <h2 class="impact-card__number">
+            <span>02</span>
+          </h2>
+          <div class="impact-card__text">
+            Вы начнете дозарабатывать от 70.000р в месяц
+          </div>
+        </div>
+
+        <div class="sticky-section__item impact-card impact-card--3">
+          <h2 class="impact-card__number">
+            <span>03</span>
+          </h2>
+          <div class="impact-card__text">
+            Вы начнете дозарабатывать от 70.000р в месяц
+          </div>
+        </div>
+
+        <div class="sticky-section__item impact-card impact-card--4">
+          <h2 class="impact-card__number">
+            <span>04</span>
+          </h2>
+          <div class="impact-card__text">
+            Вы начнете дозарабатывать от 70.000р в месяц
+          </div>
+        </div>
+
+        <div class="sticky-section__item impact-card impact-card--5">
+          <h2 class="impact-card__number">
+            <span>05</span>
+          </h2>
+          <div class="impact-card__text">
+            Вы начнете дозарабатывать от 70.000р в месяц
+          </div>
+
+        </div>
+        <div class="sticky-section__item impact-card impact-card--6">
+          <h2 class="impact-card__number">
+            <span>06</span>
+          </h2>
+          <div class="impact-card__text">
+            Вы начнете дозарабатывать от 70.000р в месяц
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section-bg container">
+      <div class="section-bg__ellipse">
+
+      </div>
+
+      <div class="section-bg__header">
+
+        <h1 class="section-bg__title header-question header-question--purple-bold">
+          Став нашим партнером,<br><b>ты получишь:</b>
+        </h1>
+        <div class="section-bg__icon">
+        </div>
+      </div>
+
+      <div class="section-bg__body benefits">
+        <ul class="benefits__list grid grid--3">
+          <li class="benefits__item benefit-card">
+            <div class="benefit-card__bg">
+
+            </div>
+
+            <div class="benefit-card__content">
+              <h4 class="benefit-card__title">
+                Индивидуальные условия под каждого клиента
+              </h4>
+              <p class="benefit-card__info">
+                Если у тебя есть ученики, которым нужны инвестиции, готовы предложить лучшие условия
+              </p>
+            </div>
+          </li>
+
+          <li class="benefits__item benefit-card benefit-card--green-bg">
+            <div class="benefit-card__bg">
+
+            </div>
+
+            <div class="benefit-card__content">
+              <h4 class="benefit-card__title">
+                Дополнительный заработок к основной работе от 50.000 рублей в месяц
+              </h4>
+              <p class="benefit-card__info">
+                По статистике, каждый наш партнер закрывает одного клиента в работу и зарабаты-вает от 50.000 в месяц
+              </p>
+            </div>
+          </li>
+
+          <li class="benefits__item benefit-card">
+            <div class="benefit-card__bg">
+
+            </div>
+
+            <div class="benefit-card__content">
+              <h4 class="benefit-card__title">
+                Бизнес-франшиза и собственное продвижение
+              </h4>
+              <p class="benefit-card__info">
+                Готовы предоставить ресурсы, команду и наши готовые материалы для Вашего продвижения
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container container--without-right-margin section--header-in-arrow" id="casesTrigger">
+
+      <div class="section__line neon-spacer neon-spacer--cases-first-arrow" id="casesFirstLine">
+      </div>
+
+      <div class="section__header" id="casesHeader">
+
+        <div class="section__icon header-icon header-icon--green-shadow">
+          <img class="" src="./icons/cases-icon.svg" alt="">
+        </div>
+
+        <h1 class="section__question header-question header-question--green-bold">
+          Что мы наблюдаем сейчас на рынке.<br><b>Наш опыт и наши кейсы:</b>
+        </h1>
+
+      </div>
+
+      <div class="section__body section__body--with-gap" id="casesSecondLineTrigger">
+
+        <div class="section__line neon-spacer neon-spacer--cases-second-arrow" id="casesSecondLine">
+        </div>
+
+        <div class="section__content cases" id="casesContent">
+
+            <div class="cases__list swiper">
+            
+              <div class="cases__list-wrapper swiper-wrapper">
   
-            <button id="impactJoinButton" class="sticky-section__join join-button">
-              <div class="join-button__circle">
-                <div class="join-button__circle-plus"></div>
+                <div class="cases__item case-card swiper-slide">
+                  <div class="case-card__ellipse"></div>
+                  <div class="case-card__content">
+                    <div class="case-card__avatar">
+                      <img class="case-card__img" src="./images/svetlana-avatar.png" alt="">
+                    </div>
+                    <p class="case-card__info">
+                      Конверсия выросла на 17% и Светлана начала дозарабатывать дополнительно 130.000 рублей с каждой своей сделки
+                    </p>
+                    
+                    <button class="case-card__btn btn-arrow-with-hover">
+                      <div class="btn-arrow-with-hover__text">
+                        Читать кейс Светланы
+                      </div>
+                      <div class="btn-arrow-with-hover__arrow">
+      
+                      </div>
+                    </button>
+  
+                  </div>
+                </div>
+  
+                <div class="cases__item case-card swiper-slide">
+                  <div class="case-card__ellipse"></div>
+                  <div class="case-card__content">
+                    <div class="case-card__avatar">
+                      <img class="case-card__img" src="./images/vladimir-avatar.png" alt="">
+                    </div>
+                    <p class="case-card__info">
+                      Монетизировал свою записную книжку за 1 вечер. Кейс Владимира, как он заработал 250.000р за пару часов перед сном
+                    </p>
+                    
+                    <button class="case-card__btn btn-arrow-with-hover">
+                      <div class="btn-arrow-with-hover__text">
+                        Читать кейс Владимира
+                      </div>
+                      <div class="btn-arrow-with-hover__arrow">
+      
+                      </div>
+                    </button>
+  
+                  </div>
+                </div>
+  
+                <div class="cases__item case-card swiper-slide">
+                  <div class="case-card__ellipse"></div>
+                  <div class="case-card__content">
+                    <div class="case-card__avatar">
+                      <img class="case-card__img" src="./images/igor-avatar.png" alt="">
+                    </div>
+                    <p class="case-card__info">
+                      Кредитные брокеры выбирают именно нашу компанию и вот почему Игорь начал сотрудничество в этом году с нами
+                    </p>
+                    
+                    <button class="case-card__btn btn-arrow-with-hover">
+                      <div class="btn-arrow-with-hover__text">
+                        Читать кейс Игоря
+                      </div>
+                      <div class="btn-arrow-with-hover__arrow">
+      
+                      </div>
+                    </button>
+  
+                  </div>
+                </div>
+  
+                <div class="cases__item case-card swiper-slide">
+                  <div class="case-card__ellipse"></div>
+                  <div class="case-card__content">
+                    <div class="case-card__avatar">
+                      
+                    </div>
+                    <p class="case-card__info">
+                      Бизнес-франшиза, которая увеличила свои продажи на 25% всего лишь благодаря одной фразе
+                    </p>
+                    
+                    <button class="case-card__btn btn-arrow-with-hover">
+                      <div class="btn-arrow-with-hover__text">
+                        Читать кейс франшизы
+                      </div>
+                      <div class="btn-arrow-with-hover__arrow">
+      
+                      </div>
+                    </button>
+  
+                  </div>
+                </div>
+  
+                <div class="cases__item case-card swiper-slide">
+                  <div class="case-card__ellipse"></div>
+                  <div class="case-card__content">
+                    <div class="case-card__avatar">
+                      
+                    </div>
+                    <p class="case-card__info">
+                      Из подрядчика в партнеров. Кейс Анатолия, который настраивал CRM для бизнеса и стал нашим ключевым партнером
+                    </p>
+                    
+                    <button class="case-card__btn btn-arrow-with-hover">
+                      <div class="btn-arrow-with-hover__text">
+                        Читать кейс Анатолия
+                      </div>
+                      <div class="btn-arrow-with-hover__arrow">
+      
+                      </div>
+                    </button>
+  
+                  </div>
+                </div>
+  
               </div>
-              <p class="join-button__info">Стать партнером или присоединиться к команде</p>
-            </button>
-          </div>
+
+              <div class="cases__prev-btn swiper-button-prev"></div>
+              <div class="cases__next-btn swiper-button-next"></div>
+            
+            </div>
+
 
         </div>
 
-        <div id="impactList" class="sticky-section__list">
-            <div class="sticky-section__item impact-card impact-card--1">
-              <h2 class="impact-card__number">
-                <span>01</span>
-              </h2>
-              <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
-              </div>
-            </div>
-
-            <div class="sticky-section__item impact-card impact-card--2">
-              <h2 class="impact-card__number">
-                <span>02</span>
-              </h2>
-              <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
-              </div>
-            </div>
-
-            <div class="sticky-section__item impact-card impact-card--3">
-              <h2 class="impact-card__number">
-                <span>03</span>
-              </h2>
-              <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
-              </div>
-            </div>
-
-            <div class="sticky-section__item impact-card impact-card--4">
-              <h2 class="impact-card__number">
-                <span>04</span>
-              </h2>
-              <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
-              </div>
-            </div>
-
-            <div class="sticky-section__item impact-card impact-card--5">
-              <h2 class="impact-card__number">
-                <span>05</span>
-              </h2>
-              <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
-              </div>
-
-            </div>
-            <div class="sticky-section__item impact-card impact-card--6">
-              <h2 class="impact-card__number">
-                <span>06</span>
-              </h2>
-              <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
-              </div>
-            </div>
-
-        </div>
+      </div>
 
     </section>
 

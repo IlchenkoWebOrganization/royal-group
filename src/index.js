@@ -3,6 +3,15 @@ import './index.scss';
 
 import { Controller } from 'scrollmagic';
 
+import initSlider from './scripts/main-scripts/initSlider';
+
+// import styles bundle
+import 'swiper/css/bundle';
+
+import addMarginToContainerWidth from './scripts/main-scripts/addMarginToContainerWidth';
+
+
+
 import { addAnimationsWithTrigger } from './scripts/main-scripts/createAnimationsModule';
 
 import Popup from './scripts/main-scripts/popup';
@@ -13,6 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const animationController = new Controller();
 
 
+    // Настройка контейнера без отсутпа справа, но при этом с сохранением отсутпа слева, позволяющего контроллировать неоновую линию на уровне других контейнеров
+    const impactContainerToTrackMargin = document.getElementById('impactBlockTrigger');
+    const casesContainerToResize = document.getElementById('casesTrigger');
+      
+    // Первичное определение отсупа слева и размера контейнера
+    addMarginToContainerWidth(impactContainerToTrackMargin, casesContainerToResize);
+      
+    // Отслеживание изменения размера окна для изменения значений отсупа слева и размера контейнера
+    window.addEventListener('resize', () => addMarginToContainerWidth(impactContainerToTrackMargin, casesContainerToResize));
+
+
+    // Работа с popup-ами для блока потенциальных партнёров
     const firstPotentialPartnerPopup = document.getElementById("firstPotentialPartnerModal");
     const firstPotentialPartnerPopupOpenBtn = document.getElementById("openFirstPotentialPartnerBtn");
 
@@ -27,7 +48,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+    // Инициализация слайдеров
+    initSlider('.cases__list', '.cases__next-btn', '.cases__prev-btn');
+   
+
     
+    // Инициализация анимаций
     addAnimationsWithTrigger(animationController, '#heroBlockTrigger', [
         '.financing-quote__info',
         '.financing-quote__stripes',
@@ -69,6 +95,18 @@ document.addEventListener('DOMContentLoaded', function () {
         '#impactHeader',
         '#impactJoinButton',
         '#impactList'
+    ]);
+
+
+    addAnimationsWithTrigger(animationController, '#casesTrigger', [
+        '#casesFirstLine',
+        '#casesHeader',
+    ]);
+
+
+    addAnimationsWithTrigger(animationController, '#casesSecondLineTrigger', [
+        '#casesSecondLine',
+        '#casesContent'
     ]);
 
 });

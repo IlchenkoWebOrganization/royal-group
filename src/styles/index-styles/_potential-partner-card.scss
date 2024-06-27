@@ -16,71 +16,7 @@
     border-top-left-radius: 0px;
 
     &__button {
-        @include reset-button();
-
-        color: var(--color-light);
-
-        text-align: left;
-
-        font-family: 'Manrope SemiBold';
-
-        font-size: 24px;
-
-        position: relative;
-
-        display: flex;
-        align-items: center;
-        column-gap: 15px;
-
-        transition: column-gap 0.3s ease;
-
-        @include hover {
-
-            column-gap: 23px;
-            
-            .potential-partner-card__button-text::after {
-                width: 76%;
-            }
-    
-            .potential-partner-card__arrow::before {
-                width: 20px; /* длина линии при наведении */
-            }
-        }
-    }
-
-    &__arrow {
-        margin-top: 21px;
-        transform: translateY(-50%) rotate(-45deg);
-        width: 15px;
-        height: 15px;
-        border-right: 3px solid white;
-        border-bottom: 3px solid white;
-        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, right 0.3s ease;
-
-        &::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 0px;
-            height: 3px;
-            background-color: white;
-            transform: translate(-50%, -50%) rotate(45deg);
-            transition: width 0.3s ease;
-        }
-    }
-
-    &__button-text {
-        &::after {
-            content: '';
-            position: absolute;
-            top: 104%;
-            left: -0%;
-            width: 0;
-            height: 2px;
-            background-color: currentColor;
-            transition: width 0.3s ease;
-        }
+        align-self: flex-start;
     }
 
     &__text {

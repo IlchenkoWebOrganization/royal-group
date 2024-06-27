@@ -1,9 +1,8 @@
 .numbers {
-    display: flex;
-    column-gap: 100px;
 
     &__content {
         margin-top: 150px;
+        margin-left: 100px;
 
         @include font-settings(32px, inherit, var(--color-gray));
 
@@ -33,6 +32,6 @@
     }
 
     &__conclusion {
-        margin-left: -101px;
+        
     }
 }
