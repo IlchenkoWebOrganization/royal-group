@@ -1,0 +1,61 @@
+.mission {
+    width: 100%;
+    
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+        margin-left: 0;
+        margin-top: 40px;
+
+    }
+
+    &__divergence {
+        flex-shrink: 0;
+        
+        height: 298px;
+        min-width: 68px;
+
+        img {
+            height: 100%;
+        }
+
+        @include appear('', 0, 'bottom', 100px, 0, 0, 1s);
+    }
+
+    &__image {
+        height: 203px;
+        width: 312px;
+
+        @include appear('', 0, 'bottom', 100px, 0, 0, 1s);
+    }
+
+    &__text {
+        max-width: 740px;
+
+        font-size: 30px;
+        color: var(--color-gray);
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        @include appear('', 0, 'top', 100px, 0, 0, 1s);
+
+        p {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        b {
+            color: var(--color-light);
+        }
+
+    }
+
+    &__statistic {
+        margin-left: 120px;
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,49 @@
+.statistic-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 7px;
+
+    max-width: 220px;
+
+    &__info {
+        font-size: 20px;
+        font-family: 'Manrope Light';
+    }
+
+    &--purple-number {
+        @include appear('right', -300px, '', 0, 0, 0, 1s);
+
+        .statistic-item__number {
+            @include font-settings(44px, 'Neutral Face', linear-gradient(89.53deg, #C3A9FF 12.17%, #591EFF 151.86%), true
+            )
+        }
+    }
+
+    &--red-number {
+        @include appear('right', -300px, '', 0, 0, 0, 1.3s);
+
+        .statistic-item__number {
+            @include font-settings(44px, 'Neutral Face', linear-gradient(86.74deg, #FFBEBE 16.74%, #960087 194.61%), true
+            )
+        }
+    }
+
+    &--green-number {
+        @include appear('right', -300px, '', 0, 0, 0, 1.6s);
+
+        .statistic-item__number {
+            @include font-settings(44px, 'Neutral Face', linear-gradient(106.05deg, #C5FFA9 6.86%, #1E78FF 156.63%), true
+            )
+        }
+    }
+
+    &--blue-number {
+        @include appear('right', -300px, '', 0, 0, 0, 1.9s);
+
+        .statistic-item__number {
+            @include font-settings(44px, 'Neutral Face', linear-gradient(89.6deg, #A9D1FF 10.35%, #1E78FF 129.05%), true
+            )
+        }
+    }
+}

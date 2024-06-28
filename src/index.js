@@ -109,4 +109,19 @@ document.addEventListener('DOMContentLoaded', function () {
         '#casesContent'
     ]);
 
+
+    addAnimationsWithTrigger(animationController, '#missionTrigger', [
+        '#missionHeader',
+        '#missionLine',
+        '#missionConclusionDivergence',
+        '#missionConclusionText',
+        '#missionMainDivergence',
+        '#missionImage',
+        '#missionText',
+        '#missionStatisticRubles',
+        '#missionStatisticBanks',
+        '#missionStatisticClients',
+        '#missionStatisticPercents'
+    ]);
+
 });

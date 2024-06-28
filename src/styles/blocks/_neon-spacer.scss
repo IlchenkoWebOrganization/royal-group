@@ -23,7 +23,7 @@
         transition: height 0.5s ease-out;
 
         &.visible {
-            height: 740px;
+            height: 800px;
         }
     }
 
@@ -33,9 +33,10 @@
         transition: height 0.7s ease-out;
 
         margin-top: -30px;
+        margin-bottom: 30px;
 
         &.visible {
-            height: 800px;
+            height: 850px;
         }
     }
 
@@ -49,7 +50,7 @@
         margin-top: 25px;
 
         &.visible {
-            height: 600px;
+            height: 700px;
         }
     }
 
@@ -72,11 +73,26 @@
         height: 0px;
 
         margin-top: -50px;
+        margin-bottom: -25px;
 
         transition: height 0.5s ease-out;
 
         &.visible {
             height: 600px;
+        }
+    }
+
+    &--mission-arrow {
+        background: linear-gradient(180deg, #7C72FF 75%, #4F95FF 100%);
+
+        transition: height 0.8s ease-out;
+
+        height: 0px;
+
+        margin-top: -50px;
+
+        &.visible {
+            height: 960px;
         }
     }
 

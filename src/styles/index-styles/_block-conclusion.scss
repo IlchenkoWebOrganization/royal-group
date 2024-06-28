@@ -3,7 +3,10 @@
     align-items: center;
     column-gap: 35px;
 
+    margin-top: 30px;
+
     &__line-divergence {
+        flex-shrink: 0;
         height: 298px;
         min-width: 68px;
 
@@ -18,6 +21,16 @@
         @include font-settings(32px, 'Manrope Light');
 
         @include appear('right', -50%, '', 0, 0, 0, 0.7s);
+    }
+
+    &--text-gray {
+        .block-conclusion__text {
+            color: var(--color-gray);
+        }
+
+        b {
+            color: var(--color-light)
+        }
     }
 
     &--bold-blue {
