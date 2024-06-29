@@ -1,0 +1,27 @@
+.step-card {
+    background-color: rgba(22, 27, 34, 1);
+
+    min-height: 240px;
+    max-height: 240px;
+
+    min-width: 250px;
+    max-width: 25 0px;
+
+    padding-inline: 34px;
+    padding-block: 30px;
+
+    border-radius: 20px;
+    
+    border: 2px solid rgb(140, 179, 233);
+
+
+    &.shadow {
+        box-shadow: 4px 8px 40px 0px rgba(79, 149, 255, 0.4);
+    }
+
+    &__number {
+        display: inline;
+        @include font-settings(42px, 'Neutral Face',
+        linear-gradient(89.6deg, #A9D1FF 10.35%, #1E78FF 129.05%), true);
+    }
+}

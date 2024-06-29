@@ -96,4 +96,17 @@
         }
     }
 
+
+    &--steps-arrow {
+        background: linear-gradient(180deg, #4F95FF 0%, #0D1116 100%);
+
+        transition: height 0.7s ease-out;
+
+        margin-top: 20px;
+
+        &.visible {
+            height: 500px;
+        }
+    }
+
 }

@@ -51,4 +51,15 @@
         min-width: 6px;
     }
 
+    &--sticky {
+        position: relative;
+        height: 2530px;
+    
+        .section__sticky-container {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 35px;
+        }
+    }
+
 }
