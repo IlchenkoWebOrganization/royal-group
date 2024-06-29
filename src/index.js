@@ -1,5 +1,6 @@
 import './index.html';
 import './index.scss';
+import './scripts/index-scripts/shadow';
 
 import { Controller, Scene } from 'scrollmagic';
 
@@ -155,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Определяем индекс элемента, чей отступ слева равен текущему scrollLeft
       let activeIndex = -1;
       for (let i = 0; i < itemOffsets.length; i++) {
-        console.log(`${currentPosition} ${itemOffsets[i]}`);
+        // console.log(`${currentPosition} ${itemOffsets[i]}`);
 
         if (currentPosition === itemOffsets[i]) {
           activeIndex = i;

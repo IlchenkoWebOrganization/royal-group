@@ -14,9 +14,12 @@
     
     border: 2px solid rgb(140, 179, 233);
 
+    transition: 0.6s;
+
 
     &.shadow {
         box-shadow: 4px 8px 40px 0px rgba(79, 149, 255, 0.4);
+        transition: 0.6s;
     }
 
     &__number {
