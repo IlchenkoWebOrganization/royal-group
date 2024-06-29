@@ -4,9 +4,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 100px;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: start;
+    }
 
     &__info {
         @include appear('left', -20%, '', 0, 0, 0, 0.6s);
+
+        max-width: 89%;
+
+        @include mobile {
+            max-width: 75%;
+        }
     }
 
     &__stripes {
@@ -17,7 +29,34 @@
         display: flex;
         column-gap: 40px;
 
+        flex-shrink: 0;
+
         transition: all 1.1s ease-out;
+
+        img {
+            min-width: 1px;
+        }
+
+        @include tablet {
+            height: 75px;
+            column-gap: 25px;
+        }
+
+        @include desktop {
+            height: 90px;
+            column-gap: 30px;
+        }
+
+        @include mobile {
+            position: relative;
+            margin-top: 20px;
+
+            column-gap: 25px;
+
+            width: 100%;
+
+            height: 65px;
+        }
 
         &.visible {
             top: -15px;

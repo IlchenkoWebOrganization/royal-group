@@ -1,34 +1,34 @@
 .join-button {
     @include reset-button();
 
-    @include hover {
-        background-color: rgba(124, 114, 255, 0.1);
+    // @include hover {
+    //     background-color: rgba(124, 114, 255, 0.1);
 
-        border-color: rgba(124, 114, 255, 1);
+    //     border-color: rgba(124, 114, 255, 1);
 
-        box-shadow: 0 8px 16px rgba(124, 114, 255, 0.6);
+    //     box-shadow: 0 8px 16px rgba(124, 114, 255, 0.6);
 
-        transform: translateY(-3px);
-        transition: all 0.3s ease;
+    //     transform: translateY(-3px);
+    //     transition: all 0.3s ease;
         
-        .join-button__circle {
-            background-color: rgba(124, 114, 255, 0.2);
+    //     .join-button__circle {
+    //         background-color: rgba(124, 114, 255, 0.2);
 
-            box-shadow: 0 0 70px rgba(124, 114, 255, 0.8),
-                        0 0 90px rgba(124, 114, 255, 1),
-                        0 0 110px rgba(124, 114, 255, 0.6);
+    //         box-shadow: 0 0 70px rgba(124, 114, 255, 0.8),
+    //                     0 0 90px rgba(124, 114, 255, 1),
+    //                     0 0 110px rgba(124, 114, 255, 0.6);
 
-            &-plus {
-                background-color: var(--color-dark);
-                color: var(--color-light);
+    //         &-plus {
+    //             background-color: var(--color-dark);
+    //             color: var(--color-light);
 
-                &::before,
-                &::after { 
-                    background-color: rgba(124, 114, 255, 1);
-                }
-            }
-        }
-    }
+    //             &::before,
+    //             &::after { 
+    //                 background-color: rgba(124, 114, 255, 1);
+    //             }
+    //         }
+    //     }
+    // }
     
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,24 @@
 
     @include font-settings(inherit, 'Manrope SemiBold', var(--color-light));
 
+    @include mobile {
+        column-gap: 20px;
+        &--purple-blur-left-shadow {
+            box-shadow: 0 0 20px rgba(124, 114, 255, 0.8);
+        }
+    }
+
+    &__info {
+        text-align: left;
+    }
+
     &__circle {
+        @include mobile {
+            height: 42px;
+            width: 42px;
+
+            padding: 6px;
+        }
         &--purple-blur-left-shadow { // Нужно исправить, так использовать модификаторы нельзя
             box-shadow: 0 0 70px rgba(124, 114, 255, 0.8),
             0 0 90px rgba(124, 114, 255, 1),
@@ -58,6 +75,7 @@
 
         background-color: var(--color-light);
         
+
         padding: 12px;
 
         &-plus {
@@ -76,12 +94,29 @@
               width: 70%;
               height: 5px;
 
+              @include mobile {
+                height: 3px;
+              }
+
               background-color: var(--color-dark);
             }
           
+            @include mobile {
+                width: 30px;
+                height: 30px;
+
+                border-width: 3px;
+            }
+
+
             &::before {
                 -webkit-transform: rotate(90deg) translateY(200%) translateX(-10%);
                 transform: rotate(90deg) translateY(200%) translateX(-10%);
+
+                @include mobile {
+                    -webkit-transform: rotate(90deg) translateY(270%) translateX(-10%);
+                    transform: rotate(90deg) translateY(270%) translateX(-10%);
+                }
             }
         }
     }

@@ -49,6 +49,14 @@
 
     &__line {
         min-width: 6px;
+
+        @include tablet {
+            min-width: 5px;
+        }
+
+        @include mobile {
+            min-width: 4px;
+        }
     }
 
     &--sticky {
