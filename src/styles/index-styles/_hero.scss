@@ -3,17 +3,39 @@
     &__quotes {
         @include flex-column(3px);
         margin-bottom: 15px;
+
+        @include tablet {
+            row-gap: 30px
+        }
+
+        @include mobile {
+            row-gap: 10px
+        }
     }
 
     &__item {
         @include font-settings(37px, 'Neutral Face', var(--color-gray));
 
-        
+        @include desktop {
+            font-size: 33px;
+        }
+
+        @include tablet {
+            font-size: 24px;
+        }
+
+        @include mobile {
+            font-size: 23px;
+        }
 
         b {
             color: var(--color-light);
         }
 
+    }
+
+    &__join {
+        margin-left: 10px;
     }
 
 }

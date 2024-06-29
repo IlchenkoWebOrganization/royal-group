@@ -2,6 +2,11 @@
 
     &__content {
         margin-top: 150px;
+
+        @include mobile {
+            margin-top: 70px;
+        }
+
         margin-left: 100px;
 
         @include font-settings(32px, inherit, var(--color-gray));
@@ -31,7 +36,4 @@
         @include appear('', 0, 'bottom', -200px, 0, 0, 1.3s);
     }
 
-    &__conclusion {
-        
-    }
 }

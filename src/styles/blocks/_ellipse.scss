@@ -15,6 +15,17 @@
     }
 
     &__main {
+
+        @include tablet {
+            top: 640px;
+        }
+
+
+        @include mobile {
+            top: 670px;
+            width: 250vw;
+        }
+
         width: 200vw;
         height: 150vh;
         background: var(--color-dark);
@@ -31,6 +42,16 @@
     }
 
     &__shadow {
+
+        @include tablet {
+            top: 640px;
+        }
+
+        @include mobile {
+            top: 670px;
+            width: 150vw;
+        }
+
         width: 110vw;
         height: 70vh;
         background: var(--color-dark);
