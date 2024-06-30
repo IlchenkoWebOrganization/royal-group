@@ -5,6 +5,19 @@
 
     margin-top: 30px;
 
+    @include desktop {
+        column-gap: 20px;
+    }
+
+    @include tablet {
+        margin-top: 10px;
+        column-gap: 15px;
+    }
+
+    @include media-with-max(733px) {
+        margin-top: 60px;
+    }
+
     &__line-divergence {
         flex-shrink: 0;
         height: 298px;
@@ -14,11 +27,29 @@
             height: 100%;
         }
 
+        @include desktop {
+            height: 230px;
+            min-width: 45px;
+        }
+
+        @include tablet {
+            height: 200px;
+            min-width: 35px;
+        }
+
         @include appear('', 0, 'bottom', 200px, 0, 0, 1s);
     }
 
     &__text {
         @include font-settings(32px, 'Manrope Light');
+
+        @include desktop {
+            font-size: 27px;
+        }
+
+        @include tablet {
+            font-size: 24px;
+        }
 
         @include appear('right', -50%, '', 0, 0, 0, 0.7s);
     }

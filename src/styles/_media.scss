@@ -21,6 +21,12 @@ $mobile-s: 480px;
   }
 }
 
+@mixin media-with-max($maxWidth) {
+  @media (max-width: $maxWidth) {
+    @content;
+  }
+}
+
 @mixin desktop-above {
   @media (min-width: $desktop-above) {
     @content;

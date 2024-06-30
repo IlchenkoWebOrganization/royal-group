@@ -12,6 +12,39 @@
         &--payment-quote {
             max-height: 140px;
         }
+
+    }
+
+    @include desktop {
+        &--numbers-arrow {
+            &.visible {
+                height: 700px;
+            }
+        }
+    }
+
+    @include media-with-max-and-min(1024px, 981px) {
+        &--numbers-arrow {
+            &.visible {
+                max-height: 640px;
+            }
+        }
+    }
+
+    @include media-with-max(980px) {
+        &--numbers-arrow {
+            &.visible {
+                height: 810px;
+            }
+        }
+    }
+
+    @include media-with-max(733px) {
+        &--numbers-arrow {
+            &.visible {
+                height: 920px;
+            }
+        }
     }
 
     @include mobile {

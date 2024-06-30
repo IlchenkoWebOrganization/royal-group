@@ -70,7 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
         '.circular-progress-bar__gradient-circle',
         '.numbers__partners-result',
         '#numbersConclusionDivergence',
-        '#numbersConclusionText'
+        '#numbersConclusionText',
+        '.circular-description__vector'
     ]);
 
 

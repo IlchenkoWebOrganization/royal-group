@@ -3,7 +3,7 @@ const sectionElement = document.querySelector('.section--sticky');
 const sectionTop = sectionElement.offsetTop;
 const sectionHeight = sectionElement.getBoundingClientRect().height;
 const SHADOW_CLASS = 'shadow';
-const STEP_HEIGHT = 300;
+const STEP_HEIGHT = 500;
 
 
 const removeShadows = () => {
@@ -11,6 +11,7 @@ const removeShadows = () => {
 };
 
 const isCurrentCard = (currentScrollY, index) => {
+  console.log(currentScrollY)
   return currentScrollY > (sectionTop + (STEP_HEIGHT * index))
     && currentScrollY < (sectionTop + STEP_HEIGHT * (index + 1));
 }
@@ -24,7 +25,7 @@ const checkAllCards = (currentScrollY) => {
 }
 
 window.addEventListener('scroll', (e) => {
-  const currentScrollY = window.scrollY - 300;
+  const currentScrollY = window.scrollY - STEP_HEIGHT;
 
   // убираем тень и не проверяем карточки в случае если секция не в фокусе зрения
   if(currentScrollY < sectionTop  

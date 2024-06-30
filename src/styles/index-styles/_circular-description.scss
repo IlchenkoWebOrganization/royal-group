@@ -1,32 +1,79 @@
 .circular-description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    @include media-with-max-and-min(1030px, 981px) {
+        row-gap: 30px;
+    }
+
+    @include media-with-max(733px) {
+        row-gap: 20px;
+    }
+
     &__number {
         @include font-settings(inherit, inherit, linear-gradient(89.53deg, #C3A9FF 12.17%, #591EFF 151.86%), true);
 
-        @include horizontal-line-between(20px, rgba(89, 30, 255, 1), 4.5px, solid);
-
-        position: relative;
-
-        &::before {
-            content: '';
-            width: 4px;
-            height: 100px;
-            position: absolute;
-            top: 72.5%;
-            left: -11.7%;
-            background-color: rgba(89, 30, 255, 1);
-            rotate: 50deg;
-        }
-
-        &::after {
-            content: '';
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            right: -2%;
-            top: 86%;
-            border-radius: 50%;
-            background-color: rgba(89, 30, 255, 1);
+        @include media-with-max(733px) {
+            margin-left: 60px;
         }
     }
+
+
+    &__vector {
+        position: absolute;
+        left: -29%;
+        top: 60px;
+        min-width: 420px;
+        z-index: -1;
+
+        @include media-with-max-and-min(1150px, 1090px) {
+            min-width: 250px;
+            left: -23%;
+            top: 43px;
+        }
+
+        @include media-with-max-and-min(1091px, 1030px) {
+            left: -23%;
+            top: 43px;
+        }
+
+        @include media-with-max-and-min(1031px, 981px) {
+            min-width: 280px;
+            left: -24%;
+            top: 40px;
+        }
+
+        @include media-with-max-and-min(980px, 734px) {
+            left: -25%;
+        }
+
+        @include media-with-max(733px) {
+            display: none;
+        }
+
+        @include desktop {
+            min-width: 300px;
+            left: -23%;
+            top: 50px;
+        }
+
+
+    }
+
+
+    &__vector2 {
+        display: none;
+
+        @include media-with-max(733px) {
+            display: block;
+            position: absolute;
+            top: -45px;
+        }
+
+    }
+
+
 
 }

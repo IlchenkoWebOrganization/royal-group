@@ -7,9 +7,34 @@
     color: transparent;
     background-color: transparent;
 
+    @include media-with-max(980px) {
+        width: 240px;
+        height: 240px;
+    }
+
+
+    @include media-with-max(733px) {
+        width: 200px;
+        height: 200px;
+    }
+
     &__outer {
         width: 280px;
         height: 280px;
+
+        @include media-with-max(980px) {
+            width: 240px;
+            height: 240px;
+
+            padding: 35px;
+        }
+
+        @include media-with-max(733px) {
+            width: 200px;
+            height: 200px;
+
+            padding: 26px;
+        }
 
         background-color: none;
 
@@ -26,6 +51,16 @@
         width: 200px;
         height: 200px;
 
+        @include media-with-max(980px) {
+            width: 170px;
+            height: 170px;
+        }
+
+        @include media-with-max(733px) {
+            width: 150px;
+            height: 150px;
+        }
+
         border-radius: 50%;
 
         box-shadow: inset 4px 4px 6px -1px rgba(55, 55, 105, 1),
@@ -39,6 +74,14 @@
         @include font-settings(34px, 'Manrope Bold', linear-gradient(89.53deg, #C3A9FF 12.17%, #591EFF 151.86%), true);
 
         text-align: center;
+
+        @include media-with-max(980px) {
+            font-size: 29px;
+        }
+
+        @include media-with-max(733px) {
+            font-size: 27px;
+        }
     }
 
     svg {
@@ -46,12 +89,24 @@
         left: 0;
         top: 0;
 
+        @include media-with-max(733px) {
+            transform: rotate(70deg)
+        }
+
         transform: rotate(-90deg)
     }
 
     circle {
         fill: none;
         stroke-width: 40px;
+
+        @include media-with-max(980px) {
+            stroke-width: 40px;
+        }
+
+        @include media-with-max(733px) { 
+            stroke-width: 35px;
+        }
     }
 
     &__under-circle {

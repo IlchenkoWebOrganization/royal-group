@@ -3,6 +3,39 @@
     &__content {
         margin-top: 150px;
 
+        @include desktop {
+            margin-top: 120px;
+            font-size: 27px;
+            column-gap: 40px;
+            margin-left: 70px;
+        }
+
+
+        @include media-with-max-and-min(1150px, 981px) {
+            font-size: 23px;
+            margin-left: 50px;
+            column-gap: 20px;
+            margin-top: 100px;
+
+            align-items: center;
+        }
+
+        @include media-with-max(980px) {
+            flex-direction: column;
+            row-gap: 50px;
+            font-size: 24px;
+        }
+
+        @include media-with-max-and-min(980px, 734px) {
+            align-items: start;
+        }
+
+        @include media-with-max(733px) {
+            width: 100%;
+            align-items: center;
+            margin-left: 0px;
+        }
+
         @include mobile {
             margin-top: 70px;
         }
@@ -20,20 +53,93 @@
         }
     }
 
+
+
+
+    &__diagram {
+        display: flex;
+        justify-content: space-between;
+
+        column-gap: 60px;
+
+        @include desktop {
+            column-gap: 40px;
+        }
+
+        @include media-with-max-and-min(1150px, 981px) {
+            column-gap: 35px;
+            align-items: center;
+        }
+
+        @include media-with-max-and-min(980px, 734px) {
+            align-self: flex-end;
+            column-gap: 40px;
+        }
+
+        @include media-with-max(733px) {
+            flex-direction: column;
+            row-gap: 35px;
+            max-width: 80%;
+            align-self: flex-end;
+        }
+
+    }
+
+
+
+
     &__year-result-quote {
         max-width: 370px;
+
+        @include media-with-max-and-min(1150px, 734px) {
+            max-width: 270px;
+        }
+
+        @include media-with-max(733px) {
+            max-width: 80%;
+        }
     }
+
+
+
+
+
 
     &__partners-result {
         max-width: 340px;
+
+        @include media-with-max-and-min(1031px, 734px) {
+            max-width: 270px;
+        }
+
+        @include media-with-max(733px) {
+            max-width: 100%;
+        }
+
     }
+
+
+
+
 
     &__year-result-quote, &__circular {
         @include appear('', 0, 'bottom', -300px, 0, 0, 1.1s);
+
+        z-index: 10;
     }
 
     &__partners-result {
-        @include appear('', 0, 'bottom', -200px, 0, 0, 1.3s);
+        @include appear('', 0, 'bottom', -100px, 0, 0, 0.7s);
+    }
+
+
+
+
+
+    &__conclusion {
+        @include desktop {
+            max-width: 95%;
+        }
     }
 
 }
