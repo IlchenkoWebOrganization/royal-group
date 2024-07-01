@@ -10,7 +10,7 @@
 
     //     transform: translateY(-3px);
     //     transition: all 0.3s ease;
-        
+
     //     .join-button__circle {
     //         background-color: rgba(124, 114, 255, 0.2);
 
@@ -29,17 +29,66 @@
     //         }
     //     }
     // }
-    
+
+    &--impact {
+        @include media-with-max(1023px) {
+
+            max-width: 400px;
+
+            justify-content: start;
+
+            .join-button__info {
+                max-width: 300px;
+            }
+
+            .join-button__circle {
+                height: 42px;
+                width: 42px;
+
+                padding: 6px;
+
+                &-plus {
+                    width: 30px;
+                    height: 30px;
+
+                    border-width: 3px;
+
+                    &::before,
+                    &::after {
+                        height: 3px;
+                    }
+
+                    &::before {
+                        -webkit-transform: rotate(90deg) translateY(270%) translateX(-10%);
+                        transform: rotate(90deg) translateY(270%) translateX(-10%);
+                    }
+                }
+            }
+        }
+
+
+        @include desktop {
+            column-gap: 15px;
+
+            .join-button__info {
+                width: 320px;
+            }
+
+        }
+
+
+    }
+
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     column-gap: 30px;
     align-items: center;
 
     background: transparent;
-    
+
     border: 1px solid rgba(230, 237, 243, 1);
     border-radius: 88.1px;
-    
+
     padding-inline: 10px 20px;
     padding-block: 10px;
 
@@ -49,6 +98,7 @@
 
     @include mobile {
         column-gap: 20px;
+
         &--purple-blur-left-shadow {
             box-shadow: 0 0 20px rgba(124, 114, 255, 0.8);
         }
@@ -65,16 +115,18 @@
 
             padding: 6px;
         }
-        &--purple-blur-left-shadow { // Нужно исправить, так использовать модификаторы нельзя
+
+        &--purple-blur-left-shadow {
+            // Нужно исправить, так использовать модификаторы нельзя
             box-shadow: 0 0 70px rgba(124, 114, 255, 0.8),
-            0 0 90px rgba(124, 114, 255, 1),
-            0 0 110px rgba(124, 114, 255, 0.6);
+                0 0 90px rgba(124, 114, 255, 1),
+                0 0 110px rgba(124, 114, 255, 0.6);
         }
 
         @include circle(64px);
 
         background-color: var(--color-light);
-        
+
 
         padding: 12px;
 
@@ -87,20 +139,20 @@
 
             &::before,
             &::after {
-              content: '';
+                content: '';
 
-              @include abs-center;
+                @include abs-center;
 
-              width: 70%;
-              height: 5px;
+                width: 70%;
+                height: 5px;
 
-              @include mobile {
-                height: 3px;
-              }
+                @include mobile {
+                    height: 3px;
+                }
 
-              background-color: var(--color-dark);
+                background-color: var(--color-dark);
             }
-          
+
             @include mobile {
                 width: 30px;
                 height: 30px;
@@ -120,5 +172,5 @@
             }
         }
     }
-    
+
 }

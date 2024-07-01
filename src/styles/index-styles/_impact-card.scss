@@ -6,8 +6,25 @@
         @return calc(var(--base-top) + var(--card-top-step) * #{$multiplier});
     }
 
+    @include desktop {
+        max-width: 450px;
+    }
+
+    @include media-with-max(1023px) {
+        max-width: 370px;
+    }
+
+    @include media-with-max(915px) {
+        min-width: 500px;
+    }
+
+    @include media-with-max(638px) {
+        min-width: 100%;
+        height: 200px;
+    }
+
     max-width: 500px;
-    max-height: 200px;
+    height: 210px;
 
     border-radius: 32px;
 
@@ -17,6 +34,9 @@
     padding-block: 40px;
     padding-inline: 57px;
 
+    @include desktop {
+        padding-inline: 40px;
+    }
 
     @include flex-column(10px);
     justify-content: space-between;
@@ -24,12 +44,34 @@
 
     &__text {
         @include font-settings(24px, 'Manrope Light');
+
+        @include desktop {
+            font-size: 20px;
+        }
+
+        @include media-with-max(638px) {
+            font-size: 17px;
+        }
     }
 
     &__number {
         @include font-settings(42px, 'Neutral Face');
+
+        @include desktop {
+            font-size: 37px;
+        }
     }
 
+    @include media-with-max(915px) {
+        --base-top: 130px;
+
+        &--1 { top: var(--base-top); }
+        &--2 { top: calc(var(--base-top) + var(--card-top-step) * 1); }
+        &--3 { top: calc(var(--base-top) + var(--card-top-step) * 2); }
+        &--4 { top: calc(var(--base-top) + var(--card-top-step) * 3); }
+        &--5 { top: calc(var(--base-top) + var(--card-top-step) * 4); }
+        &--6 { top: calc(var(--base-top) + var(--card-top-step) * 5); }
+    }
 
     &--1 {
 

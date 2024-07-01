@@ -13,12 +13,32 @@
             max-height: 140px;
         }
 
+        &--potential-partners-arrow {
+            margin-top: -20px;
+            margin-bottom: 30px;
+    
+            &.visible {
+                height: 850px;
+            }
+        }
+
+        &--potential-partners-arrow {
+            &.visible {
+                height: 1150px;
+            }
+        }
     }
 
     @include desktop {
         &--numbers-arrow {
             &.visible {
                 height: 700px;
+            }
+        }
+
+        &--potential-partners-arrow {
+            &.visible {
+                height: 720px;
             }
         }
     }
@@ -47,6 +67,14 @@
         }
     }
 
+    @include media-with-max(638px) {
+        &--potential-partners-arrow {
+            &.visible {
+                height: 1030px;
+            }
+        }
+    }
+
     @include mobile {
         margin-left: 20px;
 
@@ -61,6 +89,21 @@
         &--numbers-arrow {
             margin-top: -20px;
             height: 70px;
+        }
+
+        &--potential-partners-arrow {
+            margin-top: -10px;
+            margin-bottom: 30px;
+    
+            &.visible {
+                height: 850px;
+            }
+        }
+
+        &--potential-partners-arrow {
+            &.visible {
+                height: 1170px;
+            }
         }
     }
 

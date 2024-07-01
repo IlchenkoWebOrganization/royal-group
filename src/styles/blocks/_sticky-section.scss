@@ -5,11 +5,56 @@
 
     margin-bottom: 20px;
 
+    @include desktop {
+        justify-content: start;
+        column-gap: 40px;
+    }
+
+    @include media-with-max(1023px) {
+        column-gap: 30px;
+    }
+
+    @include media-with-max(915px) {
+        column-gap: 20px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        column-gap: 40px;
+
+        @include desktop {
+            column-gap: 60px;
+        }
+
+        @include media-with-max(1023px) {
+            column-gap: 40px;
+        }
+
+        @include media-with-max(915px) {
+            flex-direction: column;
+
+            justify-content: start;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 35px;
+        }
+    }
 
     &__line-container {
         position: relative;
         height: 2530px;
         margin-left: 27px;
+
+        @include media-with-max(1023px) {
+            margin-left: 0;
+        }
+
+        @include media-with-max(915px) {
+            height: 2550px;
+        }
+
     }
 
     &__line-wrapper {
@@ -20,6 +65,10 @@
 
     &__icon {
         margin-left: -7px;
+
+        @include media-with-max-and-min(1023px, 639px) {
+            margin-left: 5px;
+        }
 
         position: relative;
         opacity: 0;
@@ -39,23 +88,64 @@
     &__header-container {
         position: relative;
         height: 2427px;
-        margin-top: -5px;
+
+        @include media-with-max(915px) {
+            height: 2000px;
+        }
     }
 
     &__header-wrapper {
+        width: 100%;
         position: sticky;
         position: -webkit-sticky;
-        top: 25px;
+        top: 35px;
+
+        @include desktop {
+            margin-top: 5px;
+        }
+
+        @include media-with-max(1023px) {
+            margin-top: 7px;
+            top: 45px;
+        }
+
+        @include media-with-max(800px) {
+            margin-top: 14px;
+        }
+
+        @include media-with-max(638px) {
+            margin-top: 13px;
+        }
+
 
         @include flex-column(40px);
     }
 
     &__title {
+        width: 110%;
         @include appear('right', 0, 'top', 200px, 0, 0, 1s);
     }
 
     &__join {
         @include appear('right', 0, 'top', 200px, 0, 0, 1s);
+
+        @include media-with-max(1023px) {
+            margin-left: -30px;
+        }
+
+        @include media-with-max(915px) {
+            display: none;
+        }
+    }
+
+    &__join-second {
+        display: none !important;
+
+        margin-top: 50px;
+
+        @include media-with-max(915px) {
+            display: flex !important;
+        }
     }
 
     &__list {
@@ -67,12 +157,16 @@
         height: 2400px;
 
         @include appear('right', 0, 'top', 200px, 0, 0, 1s);
+
+        @include media-with-max(915px) {
+            margin-top: -1900px;
+
+            height: 2250px;
+        }
     }
 
     &__item {
         position: sticky;
         position: -webkit-sticky;
-        
-        top: 0;
     }
 }

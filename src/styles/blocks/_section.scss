@@ -21,14 +21,10 @@
         @include appear('right', -100px, 'top', 200px, 0, 0, 1s);
 
         @include tablet {
+            margin-left: 0px;
             column-gap: 40px;
         }
-
-        @include mobile {
-            flex-direction: column;
-            row-gap: 25px;
-            text-align: center
-        }
+        
     }
 
     &__icon {
