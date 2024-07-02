@@ -2,7 +2,7 @@ import './index.html';
 import './index.scss';
 import './scripts/index-scripts/shadow';
 
-import { Controller, Scene } from 'scrollmagic';
+import { Controller } from 'scrollmagic';
 
 import initSlider from './scripts/main-scripts/initSlider';
 
@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Инициализация слайдеров
+
     initSlider('.cases__list', '.cases__next-btn', '.cases__prev-btn');
    
 

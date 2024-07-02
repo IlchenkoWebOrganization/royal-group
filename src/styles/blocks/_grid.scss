@@ -24,12 +24,15 @@
     }
 
     &--3 {
-        @include tablet-with-min {
+
+        @include media-with-max(1126px) {
             --grid-column: 2;
         }
 
-        @include mobile {
+
+        @include media-with-max(734px) {
             --grid-column: 1;
         }
+
     }
 }

@@ -1,3 +1,10 @@
 .benefits {
-    
+
+    &__list {
+        justify-content: center;
+    }
+
+    &__item {
+        justify-self: center;
+    }
 }

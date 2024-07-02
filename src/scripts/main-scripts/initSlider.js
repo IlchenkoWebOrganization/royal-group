@@ -1,9 +1,9 @@
 import Swiper from "swiper/bundle";
 
-export default function(swiperSelector, nextBtnSelector, prevBtnSelector) {
+export default function(swiperSelector, nextBtnSelector, prevBtnSelector, spaceBetween = 30, slidesPerView = 'auto') {
     return new Swiper(swiperSelector, {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
+        slidesPerView,
+        spaceBetween,
     
     
         navigation: {

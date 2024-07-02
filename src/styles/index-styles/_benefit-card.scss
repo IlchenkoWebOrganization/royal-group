@@ -1,6 +1,26 @@
 .benefit-card {
-    height: 370px;
+
+    @mixin small-card {
+        max-width: 330px;
+        max-height: 380px;
+
+        min-width: 330px;
+        min-height: 380px;
+    }
+
+    max-height: 370px;
     max-width: 350px;
+
+    min-height: 370px;
+    min-width: 350px;
+
+    @include media-with-max-and-min(1196px, 1127px) {
+        @include small-card();
+    }
+
+    @include media-with-max-and-min(857px, 734px) {
+        @include small-card()
+    }
 
     background-color: var(--color-dark);
 
@@ -11,18 +31,6 @@
     position: relative;
 
     &__bg {
-        // position: absolute;
-        // width: 100%;
-        // height: 100%;
-        // background-image: url('../../images/benefit-card-purple-bg.png');
-        // background-repeat: no-repeat;
-        // background-size: 700px auto;
-        // background-position: -330px -90px;
-        // filter: blur(15px);
-        // opacity: 0.6;
-
-
-
         position: absolute;
         width: 100%;
         height: 100%;
@@ -55,6 +63,10 @@
     &__title {
         font-family: 'Manrope SemiBold';
         font-size: 24px;
+
+        @include desktop {
+            font-size: 22px;
+        }
     }
 
     &__info {

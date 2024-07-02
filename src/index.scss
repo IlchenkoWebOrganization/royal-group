@@ -8,7 +8,6 @@
     './styles/globals';
 
 @import
-    './styles/blocks/grid',
     './styles/blocks/content',
     './styles/blocks/section',
     './styles/blocks/sticky-section',
@@ -19,7 +18,8 @@
     './styles/blocks/burger-button',
     './styles/blocks/neon-spacer',
     './styles/blocks/popup',
-    './styles/blocks/btn-arrow-with-hover';
+    './styles/blocks/btn-arrow-with-hover',
+    './styles/blocks/grid';
 
 
 @import 
@@ -40,7 +40,6 @@
     './styles/index-styles/benefit-card',
     './styles/index-styles/cases',
     './styles/index-styles/case-card',
-    './styles/index-styles/slider',
     './styles/index-styles/mission',
     './styles/index-styles/statistic-item',
     './styles/index-styles/steps',
