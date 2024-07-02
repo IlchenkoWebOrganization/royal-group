@@ -12,10 +12,35 @@
 
     position: relative;
 
+    @include media-with-max(820px) {
+        max-width: 550px;
+        min-width: 550px;
+    }
+
+
+    @include media-with-max(641px) {
+        max-width: 460px;
+        min-width: 460px;
+
+        max-height: 259px;
+
+        padding-block: 25px;
+        padding-inline: 45px;
+    }
+
     padding-block: 55px;
     padding-inline: 60px;
 
     &__ellipse {
+
+        @include media-with-max(820px) {
+            left: 20%;
+        }
+
+        @include media-with-max(641px) {
+            left: 15%;
+        }
+
         height: 270px;
         width: 330px;
 
@@ -27,7 +52,7 @@
         position: absolute;
 
         top: -213px;
-        left: 19%;
+        left: 25%;
 
         z-index: -1;
 
@@ -44,6 +69,26 @@
     }
 
     &__avatar {
+        @include media-with-max(820px) {
+            width: 70px;
+            height: 70px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        @include media-with-max(820px) {
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
         width: 90px; /* Желаемый размер аватара */
         height: 90px; /* Желаемый размер аватара */
         border-radius: 50%; /* Круглая форма */
@@ -62,6 +107,14 @@
         @include font-settings(24px, 'Manrope Light');
 
         text-align: left;
+
+        @include media-with-max(820px) {
+            font-size: 20px;
+        }
+
+        @include media-with-max(641px) {
+            font-size: 18px;
+        }
     }
 
     &__btn {

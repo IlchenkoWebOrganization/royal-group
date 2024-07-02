@@ -34,6 +34,13 @@
         align-items: center;
     }
 
+    &__question {
+        max-width: 90%;
+        @include tablet {
+            max-width: 80%;
+        }
+    }
+
     &__body {
         display: flex;
 

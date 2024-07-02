@@ -47,16 +47,6 @@
 
     &__button {
         align-self: flex-start;
-
-        font-size: 24px;
-
-        @include desktop {
-            font-size: 22px;
-        }
-
-        @include media-with-max(638px) {
-            font-size: 18px;
-        }
     }
 
     &__text {

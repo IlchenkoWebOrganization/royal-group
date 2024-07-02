@@ -9,6 +9,14 @@
 
     font-size: 24px;
 
+    @include desktop {
+        font-size: 22px;
+    }
+
+    @include media-with-max(638px) {
+        font-size: 18px;
+    }
+
     position: relative;
 
     display: flex;

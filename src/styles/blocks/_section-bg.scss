@@ -12,10 +12,12 @@
 
   @include media-with-max(1300px) {
     padding-inline: 30px;
+    padding-block: 50px;
   }
 
   @include media-with-max(1126px) {
-    padding-inline: 60px;
+    padding-inline: 40px;
+    padding-block: 60px;
   }
 
   position: relative;
@@ -46,6 +48,12 @@
     align-items: end;
 
     margin-bottom: 54px;
+  }
+
+  &__body {
+    @include tablet {
+      margin-top: -10px;
+    }
   }
 
   &__icon {
