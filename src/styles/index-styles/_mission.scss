@@ -1,6 +1,6 @@
 .mission {
     width: 100%;
-    
+
     &__main {
         display: flex;
         justify-content: space-between;
@@ -9,16 +9,82 @@
         margin-left: 0;
         margin-top: 40px;
 
+        @include desktop {
+            justify-content: start;
+            column-gap: 50px;
+        }
+
+        @include tablet {
+            column-gap: 20px;
+            margin-top: 20px;
+        }
+
+        @include media-with-max(848px) {
+            margin-top: 10px;
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+        margin-left: 0;
+
+        @include desktop {
+            justify-content: start;
+            column-gap: 30px;
+        }
+
+        @include tablet {
+            column-gap: 30px;
+        }
+
+        @include media-with-max(848px) {
+            justify-content: space-between;
+
+            margin-left: 60px;
+        }
+
+        @include media-with-max(747px) {
+            flex-direction: column;
+            align-items: start;
+
+            width: 90%;
+
+            row-gap: 30px;
+
+            margin-left: 55px;
+        }
+
+        @include media-with-max(575px) {
+            align-items: start;
+            margin-left: 50px;
+        }
     }
 
     &__divergence {
         flex-shrink: 0;
-        
         height: 298px;
         min-width: 68px;
 
         img {
             height: 100%;
+        }
+
+        @include desktop {
+            height: 230px;
+            min-width: 45px;
+        }
+
+        @include tablet {
+            height: 200px;
+            min-width: 35px;
+        }
+
+        @include media-with-max(848px) {
+            display: none;
         }
 
         @include appear('', 0, 'bottom', 100px, 0, 0, 1s);
@@ -27,6 +93,27 @@
     &__image {
         height: 203px;
         width: 312px;
+
+        @include desktop {
+            height: 170px;
+            width: 250px;
+        }
+
+        @include tablet {
+            height: 150px;
+            width: 220px;
+        }
+
+        @include media-with-max(848px) {
+            order: 2;
+        }
+
+        @include media-with-max(747px) {
+            height: 250px;
+            width: 355px;
+
+            @include appear('right', 200px, 'bottom', 0, 0, 0, 1s);
+        }
 
         @include appear('', 0, 'bottom', 100px, 0, 0, 1s);
     }
@@ -37,11 +124,44 @@
         font-size: 30px;
         color: var(--color-gray);
 
+        @include desktop {
+            width: 63%;
+            font-size: 24px;
+        }
+
+        @include tablet {
+            width: 62%;
+            font-size: 20px;
+        }
+
+        @include media-with-max-and-min(848px, 748px) {
+            .mission__first-paragraph {
+                max-width: 35%;
+            }
+        }
+
+        @include media-with-max(848px) {
+            font-size: 18px;
+            display: contents;
+
+            .mission__first-paragraph {
+                order: 1;
+            }
+
+            .mission__second-paragraph {
+                order: 3;
+            }
+        }
+
+        @include media-with-max(747px) {
+            .mission__first-paragraph, .mission__second-paragraph {
+                max-width: 80%;
+            }
+        }
+
         display: flex;
         flex-direction: column;
         row-gap: 20px;
-
-        @include appear('', 0, 'top', 100px, 0, 0, 1s);
 
         p {
             margin-bottom: 0;
@@ -54,8 +174,26 @@
 
     }
 
+    &__first-paragraph, &__second-paragraph {
+        @include appear('', 0, 'top', 100px, 0, 0, 1s);
+    }
+
     &__statistic {
         margin-left: 120px;
         margin-top: 80px;
+
+        @include media-with-max-and-min(1050px, 848px) {
+            margin-left: 60px;
+        }
+
+        @include media-with-max(847px) {
+            margin-left: 60px;
+            margin-top: 40px;
+        }
+
+        @include media-with-max(617px) {
+            margin-left: 0;
+            margin-top: 50px;
+        }
     }
 }

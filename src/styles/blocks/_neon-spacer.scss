@@ -44,7 +44,7 @@
             margin-top: -40px;
     
             &.visible {
-                height: 960px;
+                height: 740px;
             }
         }
     
@@ -94,6 +94,12 @@
         &--potential-partners-arrow {
             &.visible {
                 height: 720px;
+            }
+        }
+
+        &--mission-arrow {    
+            &.visible {
+                height: 850px;
             }
         }
     }
@@ -164,6 +170,30 @@
         &--cases-second-arrow {
             &.visible {
                 height: 420px;
+            }
+        }
+    }
+
+    @include media-with-max(847px) {
+        &--mission-arrow {
+            &.visible {
+                height: 710px;
+            }
+        }
+    }
+
+    @include media-with-max(747px) {
+        &--mission-arrow {
+            &.visible {
+                height: 1050px;
+            }
+        }
+    }
+
+    @include media-with-max(617px) {
+        &--mission-arrow {
+            &.visible {
+                height: 1520px;
             }
         }
     }
@@ -258,7 +288,7 @@
         margin-top: -55px;
 
         &.visible {
-            height: 960px;
+            height: 1000px;
         }
     }
 

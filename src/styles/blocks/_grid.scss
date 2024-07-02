@@ -35,4 +35,18 @@
         }
 
     }
+
+    &--4 {
+        @include media-with-max(847px) {
+            --grid-column: 2;
+        }
+
+        @include media-with-max(617px) {
+            --grid-column: 1;
+
+            row-gap: 30px;
+        }
+    }
+
+    
 }

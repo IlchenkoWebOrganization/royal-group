@@ -64,11 +64,6 @@
     }
 
     &__icon {
-        margin-left: -7px;
-
-        @include media-with-max-and-min(1023px, 639px) {
-            margin-left: 5px;
-        }
 
         position: relative;
         opacity: 0;

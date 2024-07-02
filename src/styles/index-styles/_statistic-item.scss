@@ -4,11 +4,42 @@
     justify-content: space-between;
     row-gap: 7px;
 
-    max-width: 220px;
+    justify-self: center;
+
+    @include media-with-max(847px) {
+        justify-self: start;
+    }
+
+    @include media-with-max(617px) {
+        justify-self: center;
+
+        border-bottom: 1px solid var(--color-gray);
+
+        padding-bottom: 30px;
+
+        width: 80%;
+    }
+
 
     &__info {
         font-size: 20px;
         font-family: 'Manrope Light';
+
+        max-width: 170px;
+
+        @include desktop {
+            font-size: 18px;
+        }
+
+        @include media-with-max-and-min(1050px, 848px) {
+            font-size: 16px;
+            max-width: 120px
+        }
+
+        @include media-with-max(847px) {
+            font-size: 20px;
+            max-width: 230px;
+        }
     }
 
     &--purple-number {
@@ -44,6 +75,16 @@
         .statistic-item__number {
             @include font-settings(44px, 'Neutral Face', linear-gradient(89.6deg, #A9D1FF 10.35%, #1E78FF 129.05%), true
             )
+        }
+    }
+
+    &__number {
+        @include desktop {
+            font-size: 35px !important;
+        }
+
+        @include media-with-max(1050px) {
+            font-size: 30px !important;
         }
     }
 }
