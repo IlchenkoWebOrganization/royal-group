@@ -99,9 +99,9 @@
     @include mobile {
         column-gap: 20px;
 
-        &--purple-blur-left-shadow {
-            box-shadow: 0 0 20px rgba(124, 114, 255, 0.8);
-        }
+        // &--purple-blur-left-shadow {
+        //     box-shadow: 0 0 20px rgba(124, 114, 255, 0.8);
+        // }
     }
 
     &__info {
@@ -114,6 +114,11 @@
             width: 42px;
 
             padding: 6px;
+
+            &--purple-blur-left-shadow {
+                box-shadow:
+                    0 0 50px rgba(124, 114, 255, 1);
+            }
         }
 
         &--purple-blur-left-shadow {

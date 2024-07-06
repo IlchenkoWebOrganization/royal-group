@@ -43,6 +43,8 @@
 
     &__body {
         display: flex;
+        align-items: start;
+        justify-content: start;
 
         &--no-flex {
             display: block;
@@ -59,17 +61,6 @@
 
         @include mobile {
             min-width: 4px;
-        }
-    }
-
-    &--sticky {
-        position: relative;
-        height: 3000px;
-    
-        .section__sticky-container {
-            position: sticky;
-            position: -webkit-sticky;
-            top: 35px;
         }
     }
 

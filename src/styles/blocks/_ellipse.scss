@@ -16,13 +16,7 @@
 
     &__main {
 
-        @include tablet {
-            top: 640px;
-        }
-
-
         @include mobile {
-            top: 670px;
             width: 250vw;
         }
 
@@ -31,24 +25,17 @@
         background: var(--color-dark);
         border-radius: 50%;
         position: absolute;
-        top: 680px;
-        transition: width 0.8s ease-out, height 0.8s ease-out, top 0.8s ease-out;
+        transition: all 0.9s ease-out;
 
         &.expanded {
             width: 200vw;
             height: 150vh;
-            top: -10%;
         }
     }
 
     &__shadow {
 
-        @include tablet {
-            top: 640px;
-        }
-
         @include mobile {
-            top: 670px;
             width: 150vw;
         }
 
@@ -58,13 +45,11 @@
         border-radius: 50%;
         box-shadow: 0 0 150px rgba(124, 114, 255, 0.5); // Более размытое свечение
         position: absolute;
-        top: 680px;
-        transition: width 0.8s ease-out, height 0.8s ease-out, top 0.8s ease-out;
+        transition: all 0.9s ease-out;
 
         &.expanded {
             height: 70vh;
             width: 200vw;
-            top: -30%;
         }
     }
 

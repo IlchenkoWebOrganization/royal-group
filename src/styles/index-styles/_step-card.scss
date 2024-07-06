@@ -1,11 +1,12 @@
 .step-card {
+
     background-color: rgba(22, 27, 34, 1);
 
     min-height: 240px;
     max-height: 240px;
 
     min-width: 250px;
-    max-width: 25 0px;
+    max-width: 250px;
 
     padding-inline: 34px;
     padding-block: 30px;
@@ -16,15 +17,90 @@
 
     transition: 0.6s;
 
+    @include desktop {
+        min-height: 210px;
+        max-height: 210px;
+    
+        min-width: 220px;
+        max-width: 220px;
+
+        padding-inline: 20px;
+    }
+
+    @include media-with-max-and-min(1164px, 1070px) {
+        min-height: 210px;
+        max-height: 210px;
+    
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    @include media-with-max-and-min(1069px, 849px) {
+        min-height: 250px;
+        max-height: 250px;
+    
+        min-width: 270px;
+        max-width: 270px;
+
+        padding-inline: 20px;
+
+        &.shadow {
+            scale: 1.08;
+        }
+    }
+
+    @include media-with-max-and-min(848px, 660px) {
+        min-height: 220px;
+        max-height: 220px;
+    
+        min-width: 220px;
+        max-width: 220px;
+    }
+
+    @include media-with-max(659px) {
+        min-height: 170px;
+        max-height: 170px;
+    
+        min-width: 100%;
+
+        padding-inline: 20px;
+    }
+
 
     &.shadow {
         box-shadow: 4px 8px 40px 0px rgba(79, 149, 255, 0.4);
         transition: 0.6s;
+
+        scale: 1.15;
     }
 
     &__number {
         display: inline;
         @include font-settings(42px, 'Neutral Face',
         linear-gradient(89.6deg, #A9D1FF 10.35%, #1E78FF 129.05%), true);
+    }
+
+    &__info {
+        font-size: 18px;
+
+        @include desktop {
+            font-size: 16px;
+        }
+
+        @include media-with-max(1069px) {
+            margin-top: 10px;
+        }
+
+        @include media-with-max-and-min(1069px, 849px) {
+            font-size: 18px;
+        }
+
+        @include media-with-max(848px) {
+            font-style: 16px;
+        }
+
+        @include media-with-max(659px) {
+            font-size: 18px;
+        }
     }
 }

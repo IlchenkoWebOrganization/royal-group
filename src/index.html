@@ -45,7 +45,7 @@
 
   <main class="content">
 
-    <section class="section container">
+    <section class="section container" id="heroSection">
 
       <div class="section__body section__body--no-flex">
 
@@ -90,79 +90,82 @@
 
         </div>
 
-        <div class="section__content">
-          <div class="numbers" id="numbersBlockTrigger">
+        <div class="section__content" id="numbersSection">
+            <div class="numbers">
 
-            <div class="numbers__main" id="numbersContentTrigger">
-
-              <div class="numbers__content">
-                <div class="numbers__year-result-quote">
-                  Только за 2024 год, мы уже <b>ПРИВЛЕКАЛИ БОЛЕЕ 500 МЛН РУБ</b> предпринимателям по всей России
-                </div>
-
-                <div class="numbers__diagram">
-                  <div class="numbers__circular circular-progress-bar">
-                    <div class="circular-progress-bar__outer">
-                      <div class="circular-progress-bar__inner">
-                        <div class="circular-progress-bar__number">
-                          500 МЛН РУБ
+              <div class="numbers__main" id="numbersContentTrigger">
+  
+                <div class="numbers__content">
+                  <div class="numbers__year-result-quote">
+                    Только за 2024 год, мы уже <b>ПРИВЛЕКАЛИ БОЛЕЕ 500 МЛН РУБ</b> предпринимателям по всей России
+                  </div>
+  
+                  <div class="numbers__diagram">
+                    <div class="numbers__circular circular-progress-bar">
+                      <div class="circular-progress-bar__outer">
+                        <div class="circular-progress-bar__inner">
+                          <div class="circular-progress-bar__number">
+                            500 МЛН РУБ
+                          </div>
                         </div>
                       </div>
+    
+                      <svg class="circular-progress-bar__under-circle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 280 280">
+                        <circle cx="140" cy="140" r="120" stroke="rgba(55, 55, 105, 1)" stroke-width="40" fill="none"
+                          stroke-linecap="round" />
+                      </svg>
+    
+    
+                      <svg class="circular-progress-bar__gradient-circle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 280 280">
+                        <defs>
+                          <linearGradient id="CircularGradientColor" gradientTransform="rotate(90)">
+                            <stop offset="12.17%" stop-color="#C3A9FF" />
+                            <stop offset="151.86%" stop-color="#591EFF" />
+                          </linearGradient>
+                        </defs>
+                        <circle cx="140" cy="140" r="120" stroke="url(#CircularGradientColor)" stroke-width="40" fill="none"
+                          stroke-linecap="round" />
+                      </svg>
+    
                     </div>
+    
+                    <div class="numbers__partners-result circular-description">
+    
+                      <div class="circular-description__number">
+                        300 млн рублей
+                      </div>
+    
+                      <img class="circular-description__vector" src="./icons/diagram-vector.svg" alt="">
   
-                    <svg class="circular-progress-bar__under-circle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 280 280">
-                      <circle cx="140" cy="140" r="120" stroke="rgba(55, 55, 105, 1)" stroke-width="40" fill="none"
-                        stroke-linecap="round" />
-                    </svg>
-  
-  
-                    <svg class="circular-progress-bar__gradient-circle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 280 280">
-                      <defs>
-                        <linearGradient id="CircularGradientColor" gradientTransform="rotate(90)">
-                          <stop offset="12.17%" stop-color="#C3A9FF" />
-                          <stop offset="151.86%" stop-color="#591EFF" />
-                        </linearGradient>
-                      </defs>
-                      <circle cx="140" cy="140" r="120" stroke="url(#CircularGradientColor)" stroke-width="40" fill="none"
-                        stroke-linecap="round" />
-                    </svg>
-  
+                      <img class="circular-description__vector2" src="./icons/diagram-vector2.svg" alt="">
+    
+                      <div class="circular-description__text">
+                        Из которых, 300 млн - это <b>БЛАГОДАРЯ НАШИМ ПАРТНЁРАМ</b>
+                      </div>
+    
+                    </div>
                   </div>
   
-                  <div class="numbers__partners-result circular-description">
+                </div>
   
-                    <div class="circular-description__number">
-                      300 млн рублей
-                    </div>
-  
-                    <img class="circular-description__vector" src="./icons/diagram-vector.svg" alt="">
-
-                    <img class="circular-description__vector2" src="./icons/diagram-vector2.svg" alt="">
-  
-                    <div class="circular-description__text">
-                      Из которых, 300 млн - это <b>БЛАГОДАРЯ НАШИМ ПАРТНЁРАМ</b>
-                    </div>
-  
+                <div class="numbers__conclusion block-conclusion block-conclusion--bold-blue">
+                  <div id="numbersConclusionDivergence" class="block-conclusion__line-divergence">
+                    <img class="block-conclusion__img" src="./images/numbers-footer-divergence.svg" alt="">
                   </div>
+  
+                  <p id="numbersConclusionText" class="block-conclusion__text">За 4 месяца, наши партнеры заработали -
+                    <b>более 7 млн рублей</b>. И
+                    при этом <b>потратив не более 1 часа в день,</b> написав потенциальным клиентам
+                  </p>
                 </div>
 
+                <div id="arrowReachableElement"></div>
+  
               </div>
-
-              <div class="numbers__conclusion block-conclusion block-conclusion--bold-blue">
-                <div id="numbersConclusionDivergence" class="block-conclusion__line-divergence">
-                  <img class="block-conclusion__img" src="./images/numbers-footer-divergence.svg" alt="">
-                </div>
-
-                <p id="numbersConclusionText" class="block-conclusion__text">За 4 месяца, наши партнеры заработали -
-                  <b>более 7 млн рублей</b>. И
-                  при этом <b>потратив не более 1 часа в день,</b> написав потенциальным клиентам
-                </p>
-              </div>
-
+  
             </div>
-
-          </div>
         </div>
+
 
       </div>
     </section>
@@ -714,74 +717,90 @@
 
     </section>
 
-    <section class="section container section--header-in-arrow section--sticky" id="stepsBlockTrigger">
+    <section class="sticky-section-steps container" id="stepsBlockTrigger">
 
-      <div class="section__sticky-container">
+      <div class="sticky-section-steps__line-container">
 
-        <div class="section__header" id="stepsHeader">
+        <div class="sticky-section-steps__line-wrapper">
 
-          <div class="section__icon header-icon header-icon--blue-shadow">
-            <img class="" src="./icons/steps-icon.svg" alt="">
+          <div class="sticky-section-steps__icon header-icon header-icon--blue-shadow" id="stepsIcon">
+            <img src="./icons/steps-icon.svg" alt="">
           </div>
-  
-          <h1 class="section__question header-question header-question--blue-bold">
-            Как <b>начать сотрудничество</b> с нами:
-          </h1>
-  
-        </div>
-  
-        <div class="section__body">
-  
-          <div class="section__line neon-spacer neon-spacer--steps-arrow" id="stepsLine">
-          </div>
-  
-          <div class="section__content steps">
-            <ul class="steps__list grid grid--4">
-              <li class="steps__item step-card">
-                <h4 class="step-card__number">
-                  01
-                </h4>
-  
-                <p class="step-card__info">
-                  Свяжитесь с нашим представителем
-                </p>
-              </li>
-  
-              <li class="steps__item step-card">
-                <h4 class="step-card__number">
-                  02
-                </h4>
-  
-                <p class="step-card__info">
-                  В случае необходимости, созвонимся и более детально расскажем про нас
-                </p>
-              </li>
-  
-              <li class="steps__item step-card">
-                <h4 class="step-card__number">
-                  03
-                </h4>
-  
-                <p class="step-card__info">
-                  Выдадим всю необходимую информацию для работы с нами
-                </p>
-              </li>
-  
-              <li class="steps__item step-card">
-                <h4 class="step-card__number">
-                  04
-                </h4>
-  
-                <p class="step-card__info">
-                  Будем рады начать сотрудничество
-                </p>
-              </li>
-  
-            </ul>
-          </div>
-  
+
+          <div class="sticky-section-steps__line neon-spacer neon-spacer--steps-arrow" id="stepsLine"></div>
+
         </div>
 
+      </div>
+
+      <div id="stepsContent" class="sticky-section-steps__content">
+
+        <div class="sticky-section-steps__content-wrapper">
+          <div class="sticky-section-steps__header-container">
+
+            <div class="sticky-section__header-wrapper">
+              <h1 id="stepsHeader"
+                class="sticky-section__title header-question header-question--blue-bold">
+                Как <b>начать сотрудничество</b> с нами:
+              </h1>
+            </div>
+    
+          </div>
+    
+          <div id="stepsList" class="sticky-section-steps__list grid grid--steps">
+                <div class="sticky-section-steps__item sticky-section-steps__item--1 step-card">
+                  <h4 class="step-card__number">
+                    01
+                  </h4>
+    
+                  <p class="step-card__info">
+                    Свяжитесь с нашим представителем
+                  </p>
+                </div>
+    
+                <div class="sticky-section-steps__item sticky-section-steps__item--2 step-card">
+                  <h4 class="step-card__number">
+                    02
+                  </h4>
+    
+                  <p class="step-card__info">
+                    В случае необходимости, созвонимся и более детально расскажем про нас
+                  </p>
+                </div>
+    
+                <div class="sticky-section-steps__item sticky-section-steps__item--3 step-card">
+                  <h4 class="step-card__number">
+                    03
+                  </h4>
+    
+                  <p class="step-card__info">
+                    Выдадим всю необходимую информацию для работы с нами
+                  </p>
+                </div>
+    
+                <div class="sticky-section-steps__item sticky-section-steps__item--4 step-card">
+                  <h4 class="step-card__number">
+                    04
+                  </h4>
+    
+                  <p class="step-card__info">
+                    Будем рады начать сотрудничество
+                  </p>
+                </div>
+    
+          </div>
+
+          <div id="stepsJoinTrigger"></div>
+  
+          <button class="sticky-section-steps__join join-button" id="stepsJoin">
+            <div class="join-button__circle">
+              <div class="join-button__circle-plus"></div>
+            </div>
+            <p class="join-button__info">Стать партнером или присоединиться к команде</p>
+          </button>
+
+        </div>
+        
       </div>
 
     </section>
