@@ -2,7 +2,7 @@
 
     margin-top: 50px;
 
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 
     &__list {
         @include desktop {
@@ -16,7 +16,6 @@
         }
 
         @include tablet {
-            margin-left: 130px;
         }
 
         @include mobile {
@@ -24,7 +23,7 @@
         }
 
         @include media-with-max(638px) {
-
+            max-width: 100%;
         }
 
         margin-left: 100px;

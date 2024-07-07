@@ -1,6 +1,8 @@
 import './index.html';
 import './index.scss';
 
+import './scripts/index-scripts/shadow'
+
 
 // Работа с анимациями при достижении какого-то элемента
 import { Controller } from 'scrollmagic';
@@ -25,14 +27,6 @@ import addMarginToContainerWidth from './scripts/main-scripts/addMarginToContain
 import Popup from './scripts/main-scripts/popup';
 
 
-// Тень элементов четвертого блока
-import './scripts/index-scripts/shadow';
-
-
-// Менеджеры элементов
-import numbersLineManager from './scripts/index-scripts/numbersLineManager';
-
-import manageEllipse from './scripts/index-scripts/manageEllipse';
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -64,10 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new Popup(secondPotentialPartnerPopup, secondPotentialPartnerPopupOpenBtn)
 
- 
-    manageEllipse();
-    numbersLineManager();
-    
+
+
 
     initSlider('.cases__list', '.cases__next-btn', '.cases__prev-btn');
 
@@ -77,12 +69,12 @@ document.addEventListener('DOMContentLoaded', function () {
         '.financing-quote__info',
         '.financing-quote__stripes',
         '.payment-quote__info',
-        '.neon-spacer--payment-quote'
+        '#heroLine'
     ]);
 
     
     addAnimationsWithTrigger(animationController, '.numbers__content', [
-        '#numbersArrow',
+        '#numbersLine',
     ]);
 
 

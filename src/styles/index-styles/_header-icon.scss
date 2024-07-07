@@ -1,8 +1,18 @@
 .header-icon {
     @include circle(55px);
 
+    position: relative;
+
+    z-index: 10;
+
     @include mobile {
-        @include circle(45px);
+        @include circle(30px);
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
     }
 
     img {
@@ -11,9 +21,9 @@
     }
 
     &--blue-shadow {
-        background: rgba(0, 150, 255, 0.27);
-
-        box-shadow: 0 0 30px 10px rgba(0, 150, 255, 0.4);
+        background-color: rgba(0, 150, 255, 0.277); /* Явный цвет в rgba */
+            border-radius: 50%;
+            box-shadow: 0 0 30px 10px rgba(0, 150, 255, 0.4); /* Тень с тем же цветом */
     }
 
     &--purple-shadow {

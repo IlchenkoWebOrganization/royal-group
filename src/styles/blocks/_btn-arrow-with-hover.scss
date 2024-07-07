@@ -14,7 +14,11 @@
     }
 
     @include media-with-max(638px) {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    @include media-with-max(410px) {
+        font-size: 13px;
     }
 
     position: relative;

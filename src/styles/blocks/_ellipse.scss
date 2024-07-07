@@ -16,7 +16,10 @@
 
     &__main {
 
+        top: 650px;
+
         @include mobile {
+            top: 750px;
             width: 250vw;
         }
 
@@ -28,6 +31,7 @@
         transition: all 0.9s ease-out;
 
         &.expanded {
+            top: -30%;
             width: 200vw;
             height: 150vh;
         }
@@ -35,7 +39,10 @@
 
     &__shadow {
 
+        top: 650px;
+
         @include mobile {
+            top: 750px;
             width: 150vw;
         }
 
@@ -48,6 +55,7 @@
         transition: all 0.9s ease-out;
 
         &.expanded {
+            top: -10%;
             height: 70vh;
             width: 200vw;
         }

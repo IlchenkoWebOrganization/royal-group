@@ -1,12 +1,16 @@
 .numbers {
 
     &__content {
-        margin-top: 150px;
+        margin-top: 100px;
 
         @include desktop {
             font-size: 27px;
             column-gap: 40px;
             margin-left: 70px;
+        }
+
+        @include tablet {
+            margin-top: 70px;
         }
 
 
@@ -34,7 +38,7 @@
             align-items: center;
             margin-left: 0px;
 
-            margin-top: 130px;
+            margin-top: 50px;
         }
 
         margin-left: 100px;

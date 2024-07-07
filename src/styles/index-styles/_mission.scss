@@ -109,10 +109,17 @@
         }
 
         @include media-with-max(747px) {
-            height: 250px;
-            width: 355px;
+            height: 170px;
+            width: 250px;
 
-            @include appear('right', 200px, 'bottom', 0, 0, 0, 1s);
+            @include appear('right', -200px, 'bottom', 0, 0, 0, 1s);
+        }
+
+        @include media-with-max(530px) {
+            height: 120px;
+            width: 200px;
+
+            @include appear('right', -200px, 'bottom', 0, 0, 0, 1s);
         }
 
         @include appear('', 0, 'bottom', 100px, 0, 0, 1s);

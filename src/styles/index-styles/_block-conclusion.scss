@@ -52,6 +52,10 @@
             font-size: 24px;
         }
 
+        @include mobile {
+            font-size: 20px;
+        }
+
         @include appear('', 0, 'top', 460px, 0, 0, 1.1s);
     }
 

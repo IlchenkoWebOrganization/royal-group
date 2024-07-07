@@ -3,8 +3,11 @@
     margin-left: auto;
     margin-right: 1px;
 
-    min-height: 400px;
-    max-height: 400px;
+    margin-bottom: 130px;
+
+    @include tablet {
+        margin-bottom: 100px;
+    }
 
     @include appear('', 0, 'bottom', -300px, 0, 0, 0.8s);
 
