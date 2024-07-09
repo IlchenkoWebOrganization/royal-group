@@ -12,7 +12,7 @@
         height: 4600px;
         margin-left: 27px;
 
-        @include media-with-max-and-min(1069px, 660px) {
+        @include media-with-max-and-min(1069px, 851px) {
             height: 4650px;
         }
 
@@ -20,7 +20,7 @@
             margin-left: 0;
         }
 
-        @include media-with-max(659px) {
+        @include media-with-max(850px) {
             height: 1350px;
         }
 
@@ -60,8 +60,8 @@
         position: relative;
         height: 4500px;
 
-        @include media-with-max(659px) {
-            height: 940px;
+        @include media-with-max(850px) {
+            height: 900px;
             width: 90%;
         }
         
@@ -72,9 +72,13 @@
     &__content-wrapper {
         position: sticky;
         position: -webkit-sticky;
-        top: 45px;
+        top: 35px;
 
-        @include media-with-max(659px) {
+        @include media-with-max(1090px) {
+            top: 40px;
+        }
+
+        @include media-with-max(850px) {
             position: relative;
 
             display: contents;
@@ -82,11 +86,11 @@
     }
 
     &__header-container {
-        @include media-with-max(659px) {
+        @include media-with-max(850px) {
             position: sticky;
             position: -webkit-sticky;
-            top: 45px;
-            max-width: 90%;
+            top: 35px;
+            max-width: 97%;
         }
     }
 
@@ -94,18 +98,11 @@
     &__list {
         padding-top: 40px;
 
+        display: flex;
+
         @include appear('', 0, 'bottom', -200px, 0, 0, 1.4s);
 
-        @include media-with-max-and-min(1069px, 849px) {
-            margin-left: 50px;
-        }
-
-        @include media-with-max-and-min(848px, 660px) {
-            margin-left: 20px;
-        }
-
-        @include media-with-max(659px) {
-            margin-left: 0;
+        @include media-with-max(850px) {
 
             position: relative;
 
@@ -117,8 +114,23 @@
     }
 
     &__item {
+        flex: 1;
+
         --base-top: 140px;
         --card-top-step: 95px;
+
+        @include media-with-max(500px) {
+            --base-top: 170px;
+        };
+
+        @include media-with-max(850px) {
+            --card-top-step: 75px;
+        }
+
+        @include media-with-max(500px) {
+            --card-top-step: 66px;
+        }
+
 
         @function calculate-top($multiplier) {
             @return calc(var(--base-top) + var(--card-top-step) * #{$multiplier});
@@ -140,7 +152,7 @@
             top: calculate-top(3);
         }
 
-        @include media-with-max(659px) {
+        @include media-with-max(850px) {
             position: sticky;
             position: -webkit-sticky;
 
@@ -152,17 +164,11 @@
 
         margin-top: 60px;
 
-        @include media-with-max-and-min(1069px, 660px) {
-            @include appear('right', 0, 'top', 200px, 0, 0, 1s);
+        @include media-with-max(850px) {
+            margin-top: 10px;
         }
 
-        @include media-with-max-and-min(1069px, 849px) {
-            margin-top: 100px;
-        }
-
-        @include media-with-max(659px) {
-            margin-top: 20px;
-        }
+        @include appear('right', 0, 'top', 200px, 0, 0, 1s);
         
     }
 }

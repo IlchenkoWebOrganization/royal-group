@@ -13,9 +13,7 @@ import { addAnimationsWithTrigger } from './scripts/main-scripts/createAnimation
 // Работа со Swiper
 import initSlider from './scripts/main-scripts/initSlider';
 
-// import styles bundle
 import 'swiper/css/bundle';
-
 
 
 // Управление контейнером без оступа справа
@@ -25,6 +23,15 @@ import addMarginToContainerWidth from './scripts/main-scripts/addMarginToContain
 
 // Подключение класса модального окна
 import Popup from './scripts/main-scripts/popup';
+
+
+// Слайдер для описания преимуществ партнёрства
+import AdaptiveSliderForThreeCards from './scripts/main-scripts/AdaptiveSliderForThreeCards';
+
+
+
+// Менеджеры различных элементов
+import stepsJoinManager from './scripts/main-scripts/stepsJoinManager';
 
 
 
@@ -60,8 +67,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
     initSlider('.cases__list', '.cases__next-btn', '.cases__prev-btn');
+
+
+
+    new AdaptiveSliderForThreeCards('.slider-for-three-cards', '.section-bg__icon-prev', '.section-bg__icon-next');
+
 
 
     // Инициализация анимаций
@@ -152,19 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ]);
 
 
-    function setupScrollMagic() {
-        var screenWidth = window.innerWidth;
-
-        if (screenWidth <= 1070 && screenWidth >= 660) {
-            addAnimationsWithTrigger(animationController, '#stepsJoinTrigger', [
-                '#stepsJoin'
-            ]);
-        }
-    }
-
-    setupScrollMagic();
-
-    window.onresize = setupScrollMagic;
+    stepsJoinManager()
 
 
 });

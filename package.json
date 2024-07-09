@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "acorn": "^8.11.3",
+    "bootstrap": "^5.3.3",
     "escodegen": "^2.1.0",
     "gsap": "^3.12.5",
     "lodash": "^4.17.21",

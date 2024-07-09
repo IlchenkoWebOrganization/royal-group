@@ -1,0 +1,43 @@
+.potential-partners-conclusion {
+    display: flex;
+    min-height: 300px;
+
+    @include desktop {
+        min-height: 250px;
+    }
+
+    @include mobile {
+        min-height: auto;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__first-p {
+        align-self: flex-start;
+        width: 110%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__second-p {
+        align-self: flex-end;
+        margin-left: 30px;
+
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+
+    &__arrow {
+        align-self: center;
+    }
+
+    &__arrows {
+        display: flex;
+        column-gap: 15px;
+    }
+
+
+}

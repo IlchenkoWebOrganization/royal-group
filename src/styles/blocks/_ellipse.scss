@@ -31,7 +31,7 @@
         transition: all 0.9s ease-out;
 
         &.expanded {
-            top: -30%;
+            top: -10%;
             width: 200vw;
             height: 150vh;
         }
@@ -55,7 +55,7 @@
         transition: all 0.9s ease-out;
 
         &.expanded {
-            top: -10%;
+            top: -30%;
             height: 70vh;
             width: 200vw;
         }

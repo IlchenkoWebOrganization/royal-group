@@ -2,7 +2,7 @@
 
     margin-top: 50px;
 
-    margin-bottom: 90px;
+    margin-bottom: 110px;
 
     &__list {
         @include desktop {
@@ -30,9 +30,20 @@
     }
 
     &__conclusion {
-        @include media-with-max(733px) {
-            margin-top: 0px;
+        margin-top: -50px;
+
+        @include desktop {
+            margin-top: -60px;
         }
+
+        @include tablet {
+            margin-top: -100px;
+        }
+
+        @include mobile {
+            margin-top: 0;
+        }
+
     }
 
 }

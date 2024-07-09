@@ -1,7 +1,9 @@
 .case-card {
-    max-width: 700px;
+    max-width: 55%;
+    min-width: 55%;
 
-    min-width: 700px;
+    height: auto;
+
     border-radius: 20px;
 
     border: 2px solid rgba(48, 61, 48, 1);
@@ -12,20 +14,47 @@
 
     position: relative;
 
-    @include media-with-max(820px) {
-        max-width: 550px;
-        min-width: 550px;
+    @include media-with-max(1248px) {
+        padding-block: 30px;
+        padding-inline: 40px;
     }
 
 
-    @include media-with-max(641px) {
-        max-width: 460px;
-        min-width: 460px;
+    @include media-with-max(942px) {
+        max-width: 70%;
+        min-width: 70%;
+    }
 
-        max-height: 259px;
+    @include media-with-max(770px) {
+        max-width: 80%;
+        min-width: 80%;
+    }
 
-        padding-block: 25px;
-        padding-inline: 45px;
+    @include media-with-max(688px) {
+        max-width: 90%;
+        max-width: 90%;
+    }
+
+    @include media-with-max(574px) {
+        max-width: 95%;
+        max-width: 95%;
+
+    }
+
+    @include media-with-max(544px) {
+        max-width: 97%;
+        max-width: 97%;
+
+        min-height: 280px;
+        max-height: 280px;
+    }
+
+    @include media-with-max(530px) {
+        max-width: 95%;
+        max-width: 95%;
+
+        min-height: 370px;
+        max-height: 370px;
     }
 
     padding-block: 55px;
@@ -33,12 +62,19 @@
 
     &__ellipse {
 
-        @include media-with-max(820px) {
+        @include media-with-max-and-min(820px, 642px) {
             left: 20%;
         }
 
-        @include media-with-max(641px) {
+        @include media-with-max-and-min(641px, 531px) {
             left: 15%;
+        }
+
+        @include media-with-max(530px) {
+            height: 200px;
+            width: 80%;
+            top: -150px;
+            left: 10%;
         }
 
         height: 270px;
@@ -56,7 +92,8 @@
 
         z-index: -1;
 
-        filter: blur(40px); /* Добавлено размытие */
+        filter: blur(40px);
+        /* Добавлено размытие */
     }
 
     &__content {
@@ -66,6 +103,10 @@
         row-gap: 20px;
         z-index: 10;
         height: 100%;
+
+        @include media-with-max(544px) {
+            row-gap: 30px;
+        }
     }
 
     &__avatar {
@@ -89,17 +130,24 @@
             }
         }
 
-        width: 90px; /* Желаемый размер аватара */
-        height: 90px; /* Желаемый размер аватара */
-        border-radius: 50%; /* Круглая форма */
+        width: 90px;
+        /* Желаемый размер аватара */
+        height: 90px;
+        /* Желаемый размер аватара */
+        border-radius: 50%;
+        /* Круглая форма */
         border: 1px solid var(--color-gray);
         padding: 4px;
 
         img {
-            width: 80px; /* Желаемый размер аватара */
-            height: 80px; /* Желаемый размер аватара */
-            border-radius: 50%; /* Круглая форма */
-            object-fit: cover; /* Убедиться, что изображение не искажается */
+            width: 80px;
+            /* Желаемый размер аватара */
+            height: 80px;
+            /* Желаемый размер аватара */
+            border-radius: 50%;
+            /* Круглая форма */
+            object-fit: cover;
+            /* Убедиться, что изображение не искажается */
         }
     }
 
@@ -108,8 +156,8 @@
 
         text-align: left;
 
-        @include media-with-max(820px) {
-            font-size: 20px;
+        @include media-with-max(1248px) {
+            font-size: 19px;
         }
 
         @include media-with-max(641px) {

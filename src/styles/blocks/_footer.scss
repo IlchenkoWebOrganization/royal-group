@@ -1,0 +1,96 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-with-max(570px) {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    margin-bottom: 40px;
+
+    @include media-with-max(850px) {
+        margin-bottom: 100px;
+    }
+
+    &__rights {
+        font-family: 'Manrope Light';
+        color: var(--color-gray);
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        @include media-with-max(570px) {
+            order: 2;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+
+        @include media-with-max(570px) {
+            order: 1;
+        }
+
+        img {
+            width: 800px;
+
+            @include media-with-max-and-min(1117px, 960px) {
+                width: 700px;
+            }
+
+            @include media-with-max-and-min(959px, 816px) {
+                width: 500px;
+            }
+
+            @include media-with-max-and-min(815px, 728px) {
+                width: 450px;
+            }
+
+            @include media-with-max-and-min(727px, 571px) {
+                width: 350px;
+            }
+
+            @include media-with-max(570px) {
+                width: auto;
+            }
+        }
+
+        p {
+            font-family: 'Vasek';
+            font-size: 68px;
+            align-self: flex-end;
+
+            background: linear-gradient(89.53deg, #C3A9FF 12.17%, #591EFF 151.86%);
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include media-with-max-and-min(1117px, 960px) {
+                font-size: 50px;
+            }
+
+
+            @include media-with-max-and-min(959px, 728px) {
+                font-size: 40px;
+            }
+
+
+            @include media-with-max-and-min(727px, 571px) {
+               font-size: 30px;
+            }
+
+            @include media-with-max-and-min(570px, 501px) {
+                font-size: 35px;
+            }
+
+            @include media-with-max(500px) {
+                font-size: 30px;
+            }
+
+        }
+    }
+}

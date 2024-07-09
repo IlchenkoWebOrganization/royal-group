@@ -48,17 +48,5 @@
         }
     }
 
-    &--steps {
-        --grid-column: 4;
-
-        @include media-with-max(1069px) {
-            --grid-column: 2;
-        }
-
-        @include media-with-max(659px) {
-            --grid-column: 1;
-        }
-    }
-
     
 }

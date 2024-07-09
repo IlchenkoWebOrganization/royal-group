@@ -45,14 +45,13 @@
     &__line-container {
         position: relative;
         height: 2530px;
-        margin-left: 27px;
-
-        @include media-with-max(1023px) {
-            margin-left: 0;
-        }
 
         @include media-with-max(915px) {
             height: 2550px;
+        }
+
+        @include media-with-max(638px) {
+            height: 2030px;
         }
 
     }
@@ -69,7 +68,7 @@
         transform: rotate(90deg);
         transition: all 0.7s ease;
 
-        margin-left: -7px;
+        margin-left: 20px;
 
         @include tablet {
             margin-left: 5px;
@@ -92,6 +91,10 @@
 
         @include media-with-max(915px) {
             height: 2000px;
+        }
+
+        @include media-with-max(638px) {
+            height: 1500px;
         }
     }
 
@@ -126,6 +129,10 @@
     &__title {
         width: 110%;
         @include appear('right', 0, 'top', 200px, 0, 0, 1s);
+
+        @include mobile {
+            width: 90%;
+        }
     }
 
     &__join {
@@ -164,6 +171,11 @@
             margin-top: -1900px;
 
             height: 2250px;
+        }
+
+        @include media-with-max(638px) {
+            margin-top: -1400px;
+            height: 1700px;
         }
     }
 

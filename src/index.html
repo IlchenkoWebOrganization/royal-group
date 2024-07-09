@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
   <title>Investments</title>
   <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
 </head>
@@ -98,7 +98,7 @@
   
                 <div class="numbers__content">
                   <div class="numbers__year-result-quote">
-                    Только за 2024 год, мы уже <b>ПРИВЛЕКАЛИ БОЛЕЕ 500 МЛН РУБ</b> предпринимателям по всей России
+                    <b>ЗА 2024 ГОД</b> мы уже привлекли <b>БОЛЕЕ 500 МЛН РУБЛЕЙ</b>
                   </div>
   
                   <div class="numbers__diagram">
@@ -141,7 +141,7 @@
                       <img class="circular-description__vector2" src="./icons/diagram-vector2.svg" alt="">
     
                       <div class="circular-description__text">
-                        Из которых, 300 млн - это <b>БЛАГОДАРЯ НАШИМ ПАРТНЁРАМ</b>
+                        <p><b>БЛАГОДАРЯ НАШИМ ПАРТНЁРАМ</b></p>
                       </div>
     
                     </div>
@@ -154,10 +154,11 @@
                     <img class="block-conclusion__img" src="./images/numbers-footer-divergence.svg" alt="">
                   </div>
   
-                  <p id="numbersConclusionText" class="block-conclusion__text">За 4 месяца, наши партнеры заработали -
-                    <b>более 7 млн рублей</b>. И
-                    при этом <b>потратив не более 1 часа в день,</b> написав потенциальным клиентам
-                  </p>
+                  <div id="numbersConclusionText" class="block-conclusion__text">
+                    <p>
+                      За 4 месяца, наши партнеры заработали 7 млн рублей. Потратив при этом не более 1 часа в день
+                    </p>
+                  </div>
                 </div>
 
                 <div id="arrowReachableElement"></div>
@@ -244,15 +245,24 @@
 
           </ul>
 
-          <div class="potential-partners__conclusion block-conclusion">
+          <div class="potential-partners__conclusion block-conclusion block-conclusion--bold-blue block-conclusion--potential-partners">
 
-            <div id="potentialPartnersConclusionDivergence" class="block-conclusion__line-divergence">
+            <div id="potentialPartnersConclusionDivergence" class="block-conclusion__line-divergence hidden-mobile">
               <img class="block-conclusion__img" src="./images/arrow-potential-partners.svg" alt="">
             </div>
 
-            <p id="potentialPartnersConclusionText" class="block-conclusion__text">За 4 месяца, наши партнеры заработали
-              - <b>более 7 млн рублей</b>. И
-              при этом <b>потратив не более 1 часа в день,</b> написав потенциальным клиентам</p>
+            <div id="potentialPartnersConclusionText" class="block-conclusion__text potential-partners-conclusion">
+              <p class="potential-partners-conclusion__first-p"><b>Проанализируй</b> свою записную книжку <b>за 1 вечер</b></p>
+              <img class="potential-partners-conclusion__arrow hidden-mobile" src="./icons/potential-partners-arrow.svg" alt="">
+
+              <div class="potential-partners-conclusion__arrows visible-mobile">
+                <img src="./icons/potential-partners-mobile-arrow.svg" alt="">
+                <img src="./icons/potential-partners-mobile-arrow.svg" alt="">
+                <img src="./icons/potential-partners-mobile-arrow.svg" alt="">
+              </div>
+
+              <p class="potential-partners-conclusion__second-p">Создай еще один <b>дополнительный источник дохода</b> для своего бизнеса</p>
+            </div>
 
           </div>
 
@@ -304,7 +314,7 @@
                 <span>01</span>
               </h2>
               <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
+                Сформируете дополнительный источник дохода, который будет приносить Вам от 70.000 рублей в месяц
               </div>
             </div>
     
@@ -313,7 +323,7 @@
                 <span>02</span>
               </h2>
               <div class="impact-card__text">
-                Вы начнете дозарабатывать от 70.000р в месяц
+                Сможете привлекать инвестиции для своих клиентов или учеников
               </div>
             </div>
     
@@ -322,7 +332,7 @@
                 <span>03</span>
               </h2>
               <div class="impact-card__text">
-                Ваши клиенты начнут ценить Вас еще больше
+                Создадите свое уникальное торговое предложение и отстроитесь от своих конкурентов
               </div>
             </div>
     
@@ -331,7 +341,7 @@
                 <span>04</span>
               </h2>
               <div class="impact-card__text">
-                Ваши клиенты начнут ценить Вас еще больше
+                Конверсия в оплату после фразы "поможем привлечь инвестиции" вырастает на 17%
               </div>
             </div>
     
@@ -340,17 +350,9 @@
                 <span>05</span>
               </h2>
               <div class="impact-card__text">
-                Вы будете казаться намного привлекательнее и дороже своих конкурентов
+                Ваша значимость, авторитет и доверие среди подписчиков вырастит в несколько раз
               </div>
     
-            </div>
-            <div class="sticky-section__item impact-card impact-card--6">
-              <h2 class="impact-card__number">
-                <span>06</span>
-              </h2>
-              <div class="impact-card__text">
-                По статистике, конверсия становится больше на 17%
-              </div>
             </div>
     
           </div>
@@ -374,9 +376,11 @@
       <div class="section-bg__header">
 
         <h1 class="section-bg__title header-question header-question--purple-bold">
-          Став нашим партнером,<br><b>ты получишь:</b>
+          Став нашим партнером, <b>ты получишь:</b>
         </h1>
-        <div class="section-bg__icon">
+        <div class="section-bg__icons">
+          <button class="section-bg__icon-prev"></button>
+          <button class="section-bg__icon-next"></button>
         </div>
       </div>
 
@@ -385,85 +389,106 @@
 
       <div class="section-bg__body benefits">
 
-        <div class="benefits__list grid grid--3">
-
-            <div class="benefits__item benefit-card">
-              <div class="benefit-card__bg">
+        <div class="benefits__list slider-for-three-cards">
+          
+          <div class="slider-for-three-cards__track">
+            
+            <div class="slider-for-three-cards__slide">
+              <div class="benefit-card">
+                <div class="benefit-card__bg">
   
-              </div>
-  
-              <div class="benefit-card__content">
-                <h4 class="benefit-card__title">
-                  Индивидуальные условия под каждого клиента
-                </h4>
-                <p class="benefit-card__info">
-                  Если у тебя есть ученики, которым нужны инвестиции, готовы предложить лучшие условия
-                </p>
-              </div>
-            </div>
-
-
-            <div class="benefits__item benefit-card benefit-card--green-bg">
-              <div class="benefit-card__bg">
-  
-              </div>
-  
-              <div class="benefit-card__content">
-                <h4 class="benefit-card__title">
-                  Дополнительный заработок к основной работе от 50.000 рублей в месяц
-                </h4>
-                <p class="benefit-card__info">
-                  По статистике, каждый наш партнер закрывает одного клиента в работу и зарабаты-вает от 50.000 в месяц
-                </p>
+                </div>
+    
+                <div class="benefit-card__content">
+                  <h4 class="benefit-card__title">
+                    Индивидуальные условия под каждого клиента
+                  </h4>
+                  <p class="benefit-card__info">
+                    Если у тебя есть ученики, которым нужны инвестиции, готовы предложить лучшие условия
+                  </p>
+                </div>
               </div>
             </div>
 
 
-            <div class="benefits__item benefit-card">
-              <div class="benefit-card__bg">
+            <div class="slider-for-three-cards__slide">
+              <div class="benefit-card benefit-card--green-bg">
+                
+                <div class="benefit-card__bg">
   
-              </div>
-  
-              <div class="benefit-card__content">
-                <h4 class="benefit-card__title">
-                  Бизнес-франшиза и собственное продвижение
-                </h4>
-                <p class="benefit-card__info">
-                  Готовы предоставить ресурсы, команду и наши готовые материалы для Вашего продвижения
-                </p>
-              </div>
-            </div>
+                </div>
+    
+                <div class="benefit-card__content">
+                  <h4 class="benefit-card__title">
+                    Дополнительный заработок к основной работе от 50.000 рублей в месяц
+                  </h4>
+                  <p class="benefit-card__info">
+                    По статистике, каждый наш партнер закрывает одного клиента в работу и зарабаты-вает от 50.000 в месяц
+                  </p>
+                </div>
 
-            <div class="benefits__item benefit-card benefit-card--green-bg">
-              <div class="benefit-card__bg">
-  
-              </div>
-  
-              <div class="benefit-card__content">
-                <h4 class="benefit-card__title">
-                  Дополнительный заработок к основной работе от 50.000 рублей в месяц
-                </h4>
-                <p class="benefit-card__info">
-                  По статистике, каждый наш партнер закрывает одного клиента в работу и зарабаты-вает от 50.000 в месяц
-                </p>
               </div>
             </div>
 
 
-            <div class="benefits__item benefit-card">
-              <div class="benefit-card__bg">
+            <div class="slider-for-three-cards__slide">
+              <div class="benefit-card">
+
+                <div class="benefit-card__bg">
   
-              </div>
-  
-              <div class="benefit-card__content">
-                <h4 class="benefit-card__title">
-                  Бизнес-франшиза и собственное продвижение
-                </h4>
-                <p class="benefit-card__info">
-                  Готовы предоставить ресурсы, команду и наши готовые материалы для Вашего продвижения
-                </p>
+                </div>
+    
+                <div class="benefit-card__content">
+                  <h4 class="benefit-card__title">
+                    Бизнес-франшиза и собственное продвижение
+                  </h4>
+                  <p class="benefit-card__info">
+                    Готовы предоставить ресурсы, команду и наши готовые материалы для Вашего продвижения
+                  </p>
+                </div>
+
               </div>
             </div>
+
+            <div class="slider-for-three-cards__slide">
+              <div class="benefit-card benefit-card--green-bg">
+
+                <div class="benefit-card__bg">
+  
+                </div>
+    
+                <div class="benefit-card__content">
+                  <h4 class="benefit-card__title">
+                    Дополнительный заработок к основной работе от 50.000 рублей в месяц
+                  </h4>
+                  <p class="benefit-card__info">
+                    По статистике, каждый наш партнер закрывает одного клиента в работу и зарабаты-вает от 50.000 в месяц
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="slider-for-three-cards__slide">
+              <div class="benefit-card">
+
+                <div class="benefit-card__bg">
+  
+                </div>
+    
+                <div class="benefit-card__content">
+                  <h4 class="benefit-card__title">
+                    Бизнес-франшиза и собственное продвижение
+                  </h4>
+                  <p class="benefit-card__info">
+                    Готовы предоставить ресурсы, команду и наши готовые материалы для Вашего продвижения
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
         
         </div>
 
@@ -707,7 +732,7 @@
             </div>
 
             <p id="missionConclusionText" class="block-conclusion__text">
-              Каждому клиенту предлагаем кредитные продукты <b>под конкретные цели и возможности,</b> оптимизируем процесс подачи заявки и <b>устраняем любые сложности,</b> способные привести к отказу
+              Каждому нашему клиенту мы предлагаем индивидуальные условия под конкретные цели и возможности. Наша задача помочь клиенту найти финансирование для их бизнеса на лучших условиях и в короткие сроки
             </p>
 
           </div>
@@ -748,45 +773,53 @@
     
           </div>
     
-          <div id="stepsList" class="sticky-section-steps__list grid grid--steps">
-                <div class="sticky-section-steps__item sticky-section-steps__item--1 step-card">
-                  <h4 class="step-card__number">
-                    01
-                  </h4>
-    
-                  <p class="step-card__info">
-                    Свяжитесь с нашим представителем
-                  </p>
+          <div id="stepsList" class="sticky-section-steps__list">
+                <div class="sticky-section-steps__item sticky-section-steps__item--1">
+                  <div class="step-card">
+                    <h4 class="step-card__number">
+                      01
+                    </h4>
+      
+                    <p class="step-card__info">
+                      Свяжитесь с нашим представителем
+                    </p>
+                  </div>
                 </div>
     
-                <div class="sticky-section-steps__item sticky-section-steps__item--2 step-card">
-                  <h4 class="step-card__number">
-                    02
-                  </h4>
-    
-                  <p class="step-card__info">
-                    В случае необходимости, созвонимся и более детально расскажем про нас
-                  </p>
+                <div class="sticky-section-steps__item sticky-section-steps__item--2">
+                  <div class="step-card">
+                    <h4 class="step-card__number">
+                      02
+                    </h4>
+      
+                    <p class="step-card__info">
+                      Получите всю детальную информацию о нас, а также доступ к материалу для сотрудничества
+                    </p>
+                  </div>
                 </div>
     
-                <div class="sticky-section-steps__item sticky-section-steps__item--3 step-card">
-                  <h4 class="step-card__number">
-                    03
-                  </h4>
-    
-                  <p class="step-card__info">
-                    Выдадим всю необходимую информацию для работы с нами
-                  </p>
+                <div class="sticky-section-steps__item sticky-section-steps__item--3">
+                  <div class="step-card">
+                    <h4 class="step-card__number">
+                      03
+                    </h4>
+      
+                    <p class="step-card__info">
+                      Присоединитесь к нашему эксклюзивному сообществу партнеров
+                    </p>
+                  </div>
                 </div>
     
-                <div class="sticky-section-steps__item sticky-section-steps__item--4 step-card">
-                  <h4 class="step-card__number">
-                    04
-                  </h4>
-    
-                  <p class="step-card__info">
-                    Будем рады начать сотрудничество
-                  </p>
+                <div class="sticky-section-steps__item sticky-section-steps__item--4">
+                  <div class="step-card" id="fourthCard">
+                    <h4 class="step-card__number">
+                      04
+                    </h4>
+      
+                    <p class="step-card__info">
+                      Начните долгосрочное сотрудничество с нашей компанией
+                    </p>
+                  </div>
                 </div>
     
           </div>
@@ -797,7 +830,7 @@
             <div class="join-button__circle">
               <div class="join-button__circle-plus"></div>
             </div>
-            <p class="join-button__info">Стать партнером или присоединиться к команде</p>
+            <p class="join-button__info">Стать партнером</p>
           </button>
 
         </div>
@@ -807,6 +840,19 @@
     </section>
 
   </main>
+
+  <footer class="footer container">
+    <div class="footer__rights">
+      <p>2014-2024</p>
+      <p>Права защищены</p>
+      <p>Inc.Corporation</p>
+    </div>
+
+    <div class="footer__logo">
+      <img src="images/footer-logo.svg" alt="logo">
+      <p>технологичное решение для развития бизнеса</p>
+    </div>
+  </footer>
 
 
   <div class="ellipse">
@@ -818,27 +864,86 @@
 
 
   <div id="firstPotentialPartnerModal" class="popup">
-    <div class="popup__content">
-      <span class="popup__close-btn">&times;</span>
-      <h2 class="popup__title">Pop-up 1</h2>
-      <p class="popup__main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestiae ullam, architecto
-        natus enim voluptatum eum omnis saepe, molestias laboriosam officiis? Voluptate iusto magni voluptatum
-        repellendus ad vero debitis quae.</p>
+    <div class="popup__content first-potential-partners-modal">
+        <div class=" first-potential-partners-modal__body">
+
+          <button class="popup__close-btn first-potential-partners-modal__close">&times;</button>
+
+          <div class="first-potential-partners-modal__content">
+          
+            <h3 class="modal-title first-potential-partners-modal__title" id="firstPotentialPartnersModalLabel">Владельцы онлайн-школ, обучающих программ, бизнес-франшизы</h3>
+
+            <div class="first-potential-partners-modal__main-text">
+              <p>Представим ситуацию, <b>вы продаете свой курс за 100.000 рублей.</b> И даете гарантию, что человек после Вашего продукта начнет зарабатывать.</p>
+
+              <p><b>Ваш чек может вырасти в 1.5-2 раза.
+              </b> Только за счет того блока, что вы дополнительно будете помогать людям привлекать инвестиции для их бизнеса под любые цели.</p>
+            </div>
+
+            <div class="first-potential-partners-modal__text-with-divergence">
+              <img class="first-potential-partners-modal__divergence" src="./icons/potential-partners-first-modal-divergence.svg" alt="">
+
+              <div class="first-potential-partners-modal__divergence-info">
+                <p>
+                  Маркетинг, трафик, масштабирование бизнеса, найм лучших спецов на рынке
+                </p>
+
+                <p>
+                  Каждому твоему клиенту рано или поздно понадобятся инвестиции, если он в сфере бизнеса. И с каждого клиента ты сможешь зарабатывать дополнительно от 50 тысяч рублей.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="first-potential-partners-modal__conclusion">
+              По итогу, твой чек уже не 100 тысяч рублей, а потенциальные 200-250к
+            </div>
+          </div>
+
+        </div>
+
     </div>
   </div>
-
 
   <div id="secondPotentialPartnerModal" class="popup">
-    <div class="popup__content">
-      <span class="popup__close-btn">&times;</span>
-      <h2 class="popup__title">Pop-up 2</h2>
-      <p class="popup__main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestiae ullam, architecto
-        natus enim voluptatum eum omnis saepe, molestias laboriosam officiis? Voluptate iusto magni voluptatum
-        repellendus ad vero debitis quae.</p>
+    <div class="popup__content second-potential-partners-modal">
+        <div class=" second-potential-partners-modal__body">
+
+          <button class="popup__close-btn second-potential-partners-modal__close">&times;</button>
+          
+          <div class="second-potential-partners-modal__content">
+          
+            <h3 class="modal-title second-potential-partners-modal__title" id="secondPotentialPartnersModalLabel">Напрямую работаете с бизнесом</h3>
+
+            <div class="second-potential-partners-modal__main-text">
+              <p>
+                Представим ситуацию, <b>ты каждый день взаимодействуешь с людьми.</b> Ты с кем-то общаешься, с кем-то заключаешь договора, кому-то оказываешь услуги.
+              </p>
+              
+              <p>
+                С большой долей вероятности, <b>эти люди чем-то занимаются, каким-то видом предпринимательства.</b> И им так же могут быть актуальны услуги привлечения инвестиций.
+              </p>
+            </div>
+
+            <div class="second-potential-partners-modal__resume">
+              По итогу, ты можешь <b>с каждого своего клиента или же просто знакомого дополнительно зарабатывать от 50 тысяч рублей</b> предложив ему найти инвестиции для бизнеса через нас
+            </div>
+
+            <div class="second-potential-partners-modal__main-text">
+              <p>
+                Более того, <b>каждый человек, которому ты оказываешь услугу - так же общается и с другими предпринимателями,</b> состоит в каких-либо бизнес клубах и постоянно находится на коннекте с другими людьми.
+              </p>
+              
+              <p>
+                Таким образом <b>ты можешь создать длинную цепочку взаимосвязей людей,</b> которые постоянно будут приводить людей на инвестиции.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
     </div>
   </div>
-
-
 
 </body>
 

@@ -3,7 +3,8 @@
 
         height: 0px;
 
-        width: 4px;
+        min-width: 4px;
+        max-width: 4px;
 
         transition: height 1.3s cubic-bezier(0.16, 1, 0.3, 1);
     
@@ -82,9 +83,7 @@
     
         &--impact {
             background: linear-gradient(180deg, #7C72FF 75%, #0D1116 100%);
-    
-            // перекрытие общего стиля неонового спейсера
-            margin-left: 14px;
+            
             margin-top: 25px;
     
             &.visible {
@@ -113,5 +112,14 @@
                 height: 550px;
             }
         }
+
+        
     
+        @include media-with-max(850px) {
+            &--steps {
+                &.visible {
+                    height: 700px;
+                }
+            }
+        }
 }

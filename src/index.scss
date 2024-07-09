@@ -7,6 +7,7 @@
     './styles/utils',
     './styles/globals';
 
+
 @import
     './styles/blocks/content',
     './styles/blocks/section',
@@ -21,10 +22,14 @@
     './styles/blocks/neon-spacer-with-height',
     './styles/blocks/popup',
     './styles/blocks/btn-arrow-with-hover',
-    './styles/blocks/grid';
+    './styles/blocks/grid',
+    './styles/blocks/footer';
 
 
 @import 
+    './styles/blocks/slider-for-three-cards',
+    './styles/index-styles/first-potential-partners-modal',
+    './styles/index-styles/second-potential-partners-modal',
     './styles/index-styles/header-question',
     './styles/index-styles/hero',
     './styles/index-styles/financing-quote',
@@ -36,6 +41,7 @@
     './styles/index-styles/block-conclusion',
     './styles/index-styles/header-icon',
     './styles/index-styles/potential-partners',
+    './styles/index-styles/potential-partners-conclusion',
     './styles/index-styles/potential-partner-card',
     './styles/index-styles/impact-card',
     './styles/index-styles/benefits',

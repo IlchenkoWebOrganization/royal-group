@@ -189,6 +189,14 @@
         margin-left: 120px;
         margin-top: 80px;
 
+        @include tablet {
+            margin-bottom: 30px;
+        }
+
+        @include mobile {
+            margin-bottom: 60px;
+        }
+
         @include media-with-max-and-min(1050px, 848px) {
             margin-left: 60px;
         }

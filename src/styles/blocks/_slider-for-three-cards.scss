@@ -1,0 +1,28 @@
+.slider-for-three-cards {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    
+    &__track {
+        display: flex;
+        transition: transform 0.4s ease;
+    }
+    
+    &__slide {
+        padding-inline: 15px;
+        min-width: 33.33%;
+    
+        @include media-with-max-and-min(1124px, 742px) {
+            min-width: 50%;
+        }
+    
+        @include media-with-max(838px) {
+            padding-inline: 5px;
+        }
+    
+        @include media-with-max(741px) {
+            min-width: 100%;
+            padding-inline: 0;
+        }
+    }
+}

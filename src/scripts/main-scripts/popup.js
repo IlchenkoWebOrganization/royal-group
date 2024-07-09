@@ -11,6 +11,18 @@ export default class Popup {
         this.openPopupListener();
         this.closePopupWithEscapeBtnListener();
         this.closePopupWithOutsideClickListener()
+        this.closePopupWithEscapeListener()
+    }
+
+    closePopup() {
+        document.body.classList.remove('no-scroll');
+        this.popup.classList.remove('fade-in');
+        this.popup.querySelector('.popup__content').classList.remove('slide-in');
+        this.popup.classList.add('fade-out');
+        this.popup.querySelector('.popup__content').classList.add('slide-out');
+        setTimeout(() => {
+            this.popup.style.display = "none";
+        }, 500);
     }
 
     openPopupListener() {
@@ -27,30 +39,22 @@ export default class Popup {
     }
 
     closePopupWithEscapeBtnListener() {
-        this.closePopupBtn.addEventListener('click', () => {
-            document.body.classList.remove('no-scroll');
-            this.popup.classList.remove('fade-in');
-            this.popup.querySelector('.popup__content').classList.remove('slide-in');
-            this.popup.classList.add('fade-out');
-            this.popup.querySelector('.popup__content').classList.add('slide-out');
-            setTimeout(() => {
-                this.popup.style.display = "none";
-            }, 500);
-        });
+        this.closePopupBtn.addEventListener('click', () => this.closePopup());
     }
 
     closePopupWithOutsideClickListener() {
         window.addEventListener('click', (event) => {
             if (event.target === this.popup) {
-                document.body.classList.remove('no-scroll');
-                this.popup.classList.remove('fade-in');
-                this.popup.querySelector('.popup__content').classList.remove('slide-in');
-                this.popup.classList.add('fade-out');
-                this.popup.querySelector('.popup__content').classList.add('slide-out');
-                setTimeout(() => {
-                    this.popup.style.display = "none";
-                }, 500);
+                this.closePopup()
             }
         });
+    }
+
+    closePopupWithEscapeListener() {
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' || e.code === 27) {
+                    this.closePopup()
+                }
+            });
     }
 }
