@@ -2,7 +2,7 @@
     max-width: 55%;
     min-width: 55%;
 
-    height: auto;
+    height: 100%;
 
     border-radius: 20px;
 
@@ -44,17 +44,11 @@
     @include media-with-max(544px) {
         max-width: 97%;
         max-width: 97%;
-
-        min-height: 280px;
-        max-height: 280px;
     }
 
     @include media-with-max(530px) {
         max-width: 95%;
         max-width: 95%;
-
-        min-height: 370px;
-        max-height: 370px;
     }
 
     padding-block: 55px;
@@ -67,14 +61,13 @@
         }
 
         @include media-with-max-and-min(641px, 531px) {
-            left: 15%;
+            width: 80%;
+            left: 10%;
         }
 
         @include media-with-max(530px) {
             height: 200px;
-            width: 80%;
             top: -150px;
-            left: 10%;
         }
 
         height: 270px;
@@ -93,7 +86,6 @@
         z-index: -1;
 
         filter: blur(40px);
-        /* Добавлено размытие */
     }
 
     &__content {

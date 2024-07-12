@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
-  <title>Investments</title>
-  <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
+  <title>Royal Group</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png">
+  <link rel="manifest" href="../static/site.webmanifest">
 </head>
 
 <body>
@@ -16,19 +19,19 @@
       <nav class="header__menu hidden-mobile">
         <ul class="header__menu-list">
           <li class="header__menu_item">
-            <a href="" class="header__menu-link">Что я получу?</a>
+            <a href="#impactBlockTrigger" class="header__menu-link">Что я получу?</a>
           </li>
           <li class="header__menu_item">
-            <a href="" class="header__menu-link">Выгоды</a>
+            <a href="#benefitsBlock" class="header__menu-link">Выгоды</a>
           </li>
           <li class="header__menu_item">
-            <a href="" class="header__menu-link">Как это работает?</a>
+            <a href="#potentialPartnersBlockTrigger" class="header__menu-link">Для кого?</a>
           </li>
           <li class="header__menu_item">
-            <a href="" class="header__menu-link">Вопрос-ответ</a>
+            <a href="#casesTrigger" class="header__menu-link">Кейсы</a>
           </li>
           <li class="header__menu_item">
-            <a href="" class="header__menu-link">Контакты</a>
+            <a href="#stepsBlockTrigger"  class="header__menu-link">Как вступить?</a>
           </li>
         </ul>
       </nav>
@@ -75,7 +78,7 @@
             <div class="join-button__circle join-button__circle--purple-blur-left-shadow">
               <div class="join-button__circle-plus"></div>
             </div>
-            <p class="join-button__info">Стать партнером или присоединиться к команде</p>
+            <p class="join-button__info">Присоединиться к команде</p>
           </button>
 
         </div>
@@ -302,7 +305,7 @@
                 <div class="join-button__circle">
                   <div class="join-button__circle-plus"></div>
                 </div>
-                <p class="join-button__info">Стать партнером или присоединиться к команде</p>
+                <p class="join-button__info">Присоединиться к команде</p>
               </button>
             </div>
     
@@ -361,14 +364,14 @@
             <div class="join-button__circle">
               <div class="join-button__circle-plus"></div>
             </div>
-            <p class="join-button__info">Стать партнером или присоединиться к команде</p>
+            <p class="join-button__info">Присоединиться к команде</p>
           </button>
         </div>
 
 
     </section>
 
-    <section class="section-bg container">
+    <section class="section-bg container" id="benefitsBlock">
       <div class="section-bg__ellipse">
 
       </div>
@@ -534,7 +537,7 @@
                     </p>
                     
                     <button class="case-card__btn btn-arrow-with-hover">
-                      <div class="btn-arrow-with-hover__text">
+                      <div id="svetlanaCaseBtn" class="btn-arrow-with-hover__text">
                         Читать кейс Светланы
                       </div>
                       <div class="btn-arrow-with-hover__arrow">
@@ -555,7 +558,7 @@
                       Монетизировал свою записную книжку за 1 вечер. Кейс Владимира, как он заработал 250.000р за пару часов перед сном
                     </p>
                     
-                    <button class="case-card__btn btn-arrow-with-hover">
+                    <button class="case-card__btn btn-arrow-with-hover" id="vladimirCaseBtn">
                       <div class="btn-arrow-with-hover__text">
                         Читать кейс Владимира
                       </div>
@@ -944,6 +947,177 @@
 
     </div>
   </div>
+
+  <div id="svetlanaCase" class="popup">
+    <div class="popup__content svetlana-case-modal">
+        <div class=" svetlana-case-modal__body">
+
+          <button class="popup__close-btn svetlana-case-modal__close">&times;</button>
+          
+          <div class="svetlana-case-modal__content">
+          
+            <h3 class="modal-title svetlana-case-modal__title">Отзыв от Светланы:</h3>
+
+            <div class="svetlana-case-modal__main-text">
+              <p>
+                Меня зовут Светлана, более 7 лет я проработала в компании, которая занимается b2b продажами оборудования для салонов красоты и бьюти мастеров. Я пришла в компанию изначально на позицию менеджера по продажам, в последствии переросла в РОПа и была одним из лучших продавцов, на которую равнялись другие отделы продаж. За все время работы, я пообщалась, наверное, с более, чем 1.000 представителями бьюти-бизнеса по всей России. 
+              </p>
+              
+              <p>
+                В 21 году, ситуация связанная с коронавирусом и в целом нестабильностью в стране, пошатнуло мое положение и я приняла на тот момент, очень кардинальное решение изменить жизнь. В то время, у меня уже был накопленный опыт в продажах + в это время начался тренд инфобизнеса, онлайн-школ, онлайн-образования. Я решила здесь себя попробовать, за 2-3 года, вышла на стабильные 300.000 рублей в месяц, которые зарабатываю в онлайн-школах на позиции продажника.
+              </p>
+
+              <p>
+                С Николаем я познакомилась под конец 23 года, на одном из мероприятий, которое также было связано с инфобизнесом (Instadium). Они тогда делали рекламу своего продукта на большую аудиторию, они помогали привлекать инвестиции для онлайн школ, экспертов и продюсеров. Оставила свою заявку из любопытства, на следующий день со мной связался сам Николай, представитель компании, мне не требовались инвестиции, но мы с ним пришли к выводу, что будет интересно посотрудничать и они готовы выплачивать % с каждой сделки. 
+              </p>
+
+              <p>
+                На тот момент, я даже не представляла, что смогу дозарабатывать в месяц почти столько же, сколько я и зарабатыва в месяц на основной работе, при этом затрачивая своего времени совсем по-минимуму
+              </p>
+
+              <p>
+                Я сразу же вспомнила про свою обширную базу бьюти-мастеров, с которыми уже был выстроен какой-то коннект и они меня помнили, либо же ту компанию, которую я на тот момент представляла. В общем, я изначально связалась с ними, прошлась по всей базе буквально за 1 неделю, сидя пару часов вечером перед ноутбуком, по итогу, скрипт, который я придумала, привлек очень много внимания и спустя 3 недели, у меня закрылся первый лид на сумму 82.000 рублей
+              </p>
+
+              <p>
+                Следующий месяц по-нарастающей, текущие цифры:
+              </p>
+
+              <p>В общей сумме привлекла <b>23 клиента</b>, на общую сумму: <b>69 млн</b>
+                
+                <p>
+                  <b>Моя комиссия</b> составила около <b>2 млн рублей</b>
+                </p>
+                <p>
+                  <b>В среднем</b>, в месяц закрывалось <b>2-3 клиента<b> на сумму: </b>150-250к рублей</b> 
+                </p>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+
+  <div id="vladimirCase" class="popup">
+    <div class="popup__content vladimir-case-modal">
+        <div class="vladimir-case-modal__body">
+
+          <button class="popup__close-btn vladimir-case-modal__close">&times;</button>
+          
+          <div class="vladimir-case-modal__content">
+          
+            <h3 class="modal-title vladimir-case-modal__title">Отзыв от Владимира:
+            </h3>
+
+            <div class="vladimir-case-modal__main-text">
+              <p>
+                Познакомились с Николаем довольно случайно, он выбрал меня как подрядчика для продвижения своего сайта в Директе. На тот момент, я занимался маркетингом более 3х лет, в основном, работал со строительными компаниями. Работал с небольшими частными предприятиями, которым нужен был сайт и дальнейшая реклама для продвижения их услуг (дом под ключ, залив фундамента, инженерные работы, бани-бочки, ремонты и отделки)
+              </p>
+              
+              <p>
+                Также, попадались крупные компании, с годовым оборотом до 100-200млн, которым также требовались мои услуги. В общем, мы созвонились с Николаем и начали работу по его проекту. Во время работы, я также работал с другими людьми (строителями), мне от них периодически поступали вопросы касательно инвестиций, есть ли какие-то варианты у меня
+              </p>
+
+              <p>
+                Изначально, я как-то не придавал этому значения, но, после очередного созвана с Николаем, я узнал, что у них есть некая партнерская программа, где они выплачивают своим партнёрам от 70 тысяч рублей за приведенного клиента. Это практически столько же, сколько я и беру за свои услуги в рамках месяца 
+              </p>
+
+              <p>
+                В стройке всегда есть подводные камни в виде общения между заказчиком и подрядчиком. И на этой почве очень много споров, очень много моментов, из-за которых подрядчики иногда остаются без денег и при этом вся работа на объекте не выполнена, а по договору, нужны было сдать проект еще вчера.
+              </p>
+
+              <p>
+                Таким образом я и стал партнером Royal Group, начал передавать своих клиентов. Первый мой клиент закрылся на сумму 6 млн. За него я получил порядка 135.000 рублей, сказать, что я был удивлен, ничего не сказать, при моих вложенных усилиях - написать клиенту, что есть вариант привлечь финансирование и передать контакт Николаю, заработать такую сумму, у меня, если честно такого не было…
+              </p>
+
+              <p>
+                В общем мы так и начали сотрудничество с Николаем, которое продолжаем по сей день
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+
+  <div id="igorCase" class="popup">
+    <div class="popup__content igor-case-modal">
+        <div class="igor-case-modal__body">
+
+          <button class="popup__close-btn igor-case-modal__close">&times;</button>
+          
+          <div class="igor-case-modal__content">
+          
+            <h3 class="modal-title igor-case-modal__title">Отзыв от Владимира:
+            </h3>
+
+            <div class="igor-case-modal__main-text">
+              <p>
+                Познакомились с Николаем довольно случайно, он выбрал меня как подрядчика для продвижения своего сайта в Директе. На тот момент, я занимался маркетингом более 3х лет, в основном, работал со строительными компаниями. Работал с небольшими частными предприятиями, которым нужен был сайт и дальнейшая реклама для продвижения их услуг (дом под ключ, залив фундамента, инженерные работы, бани-бочки, ремонты и отделки)
+              </p>
+              
+              <p>
+                Также, попадались крупные компании, с годовым оборотом до 100-200млн, которым также требовались мои услуги. В общем, мы созвонились с Николаем и начали работу по его проекту. Во время работы, я также работал с другими людьми (строителями), мне от них периодически поступали вопросы касательно инвестиций, есть ли какие-то варианты у меня
+              </p>
+
+              <p>
+                Изначально, я как-то не придавал этому значения, но, после очередного созвана с Николаем, я узнал, что у них есть некая партнерская программа, где они выплачивают своим партнёрам от 70 тысяч рублей за приведенного клиента. Это практически столько же, сколько я и беру за свои услуги в рамках месяца 
+              </p>
+
+              <p>
+                В стройке всегда есть подводные камни в виде общения между заказчиком и подрядчиком. И на этой почве очень много споров, очень много моментов, из-за которых подрядчики иногда остаются без денег и при этом вся работа на объекте не выполнена, а по договору, нужны было сдать проект еще вчера.
+              </p>
+
+              <p>
+                Таким образом я и стал партнером Royal Group, начал передавать своих клиентов. Первый мой клиент закрылся на сумму 6 млн. За него я получил порядка 135.000 рублей, сказать, что я был удивлен, ничего не сказать, при моих вложенных усилиях - написать клиенту, что есть вариант привлечь финансирование и передать контакт Николаю, заработать такую сумму, у меня, если честно такого не было…
+              </p>
+
+              <p>
+                В общем мы так и начали сотрудничество с Николаем, которое продолжаем по сей день
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+
+
+  <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+      <button class="mobile-overlay__close-button cross-button">
+        <span class="visually-hidden">Закрыть навигационное меню</span>
+      </button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+          <a href="#impactBlockTrigger" class="mobile-overlay__link">Что я получу?</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#benefitsBlock" class="mobile-overlay__link">Выгоды</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#potentialPartnersBlockTrigger" class="mobile-overlay__link">Для кого?</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#casesTrigger" class="mobile-overlay__link">Кейсы</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#stepsBlockTrigger" class="mobile-overlay__link">Как вступить?</a>
+        </li>
+      </ul>
+    </div>
+  </dialog>
 
 </body>
 

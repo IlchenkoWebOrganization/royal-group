@@ -138,6 +138,8 @@
     &__join {
         @include appear('right', 0, 'top', 200px, 0, 0, 1s);
 
+        align-self: flex-start;
+
         @include media-with-max(1023px) {
             margin-left: -30px;
         }

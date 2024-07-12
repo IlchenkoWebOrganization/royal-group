@@ -32,6 +32,8 @@ import AdaptiveSliderForThreeCards from './scripts/main-scripts/AdaptiveSliderFo
 
 // Менеджеры различных элементов
 import stepsJoinManager from './scripts/main-scripts/stepsJoinManager';
+import swiperSlidesHeightManager from './scripts/main-scripts/swiperSlidesHeightManager';
+import burgerBtnManager from './scripts/main-scripts/burgerBtnManager';
 
 
 
@@ -64,6 +66,19 @@ document.addEventListener('DOMContentLoaded', function () {
     new Popup(firstPotentialPartnerPopup, firstPotentialPartnerPopupOpenBtn)
 
     new Popup(secondPotentialPartnerPopup, secondPotentialPartnerPopupOpenBtn)
+
+    const svetlanaCaseOpenBtn = document.querySelector('#svetlanaCaseBtn');
+
+    const svetlanaCasePopup = document.querySelector('#svetlanaCase')
+
+    new Popup(svetlanaCasePopup, svetlanaCaseOpenBtn)
+
+
+    const vladimirCaseOpenBtn = document.querySelector('#vladimirCaseBtn');
+
+    const vladimirCasePopup = document.querySelector('#vladimirCase')
+
+    new Popup(vladimirCasePopup, vladimirCaseOpenBtn)
 
 
 
@@ -165,5 +180,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     stepsJoinManager()
 
+    swiperSlidesHeightManager()
+
+    burgerBtnManager()
+
+
+    const joinBtns = document.querySelectorAll('.join-button');
+
+    joinBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            window.open('https://t.me/gigachat_bot', '_blank');
+        })
+    })
+
+
+    const headerBtn = document.querySelector('.header__button');
+
+    headerBtn.addEventListener('click', () => window.open('https://t.me/gigachat_bot', '_blank'))
 
 });
