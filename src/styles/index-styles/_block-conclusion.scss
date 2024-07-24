@@ -83,6 +83,10 @@
         @include media-with-max(505px) {
             margin-left: 45px;
         }
+
+        @include media-with-max(501px) {
+            margin-left: 30px;
+        }
     }
 
     &__text-block {
