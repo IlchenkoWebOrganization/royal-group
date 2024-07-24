@@ -66,8 +66,8 @@
         }
 
         @include media-with-max(530px) {
-            height: 200px;
-            top: -150px;
+            width: 60%;
+            left: 20%;
         }
 
         height: 270px;

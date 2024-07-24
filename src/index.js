@@ -73,13 +73,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new Popup(svetlanaCasePopup, svetlanaCaseOpenBtn)
 
-
     const vladimirCaseOpenBtn = document.querySelector('#vladimirCaseBtn');
 
     const vladimirCasePopup = document.querySelector('#vladimirCase')
 
     new Popup(vladimirCasePopup, vladimirCaseOpenBtn)
 
+    const igorCaseOpenBtn = document.querySelector('#igorCaseBtn');
+
+    const igorCasePopup = document.querySelector('#igorCase')
+
+    new Popup(igorCasePopup, igorCaseOpenBtn)
+
+    const franchiseCaseOpenBtn = document.querySelector('#franchiseCaseBtn');
+
+    const franchiseCasePopup = document.querySelector('#franchiseCase')
+
+    new Popup(franchiseCasePopup, franchiseCaseOpenBtn)
+
+    const anatolyCaseOpenBtn = document.querySelector('#anatolyCaseBtn');
+
+    const anatolyCasePopup = document.querySelector('#anatolyCase')
+
+    new Popup(anatolyCasePopup, anatolyCaseOpenBtn)
 
 
     initSlider('.cases__list', '.cases__next-btn', '.cases__prev-btn');

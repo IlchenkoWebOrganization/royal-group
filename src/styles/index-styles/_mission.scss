@@ -133,7 +133,7 @@
 
         @include desktop {
             width: 63%;
-            font-size: 24px;
+            font-size: 23px;
         }
 
         @include tablet {
@@ -188,13 +188,10 @@
     &__statistic {
         margin-left: 120px;
         margin-top: 80px;
-
-        @include tablet {
-            margin-bottom: 30px;
-        }
+        margin-bottom: 90px;
 
         @include mobile {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         @include media-with-max-and-min(1050px, 848px) {
@@ -209,6 +206,14 @@
         @include media-with-max(617px) {
             margin-left: 0;
             margin-top: 50px;
+        }
+    }
+
+    &__conclusion {
+        margin-bottom: 150px;
+
+        @include media-with-max(747px) {
+            margin-bottom: 0px;
         }
     }
 }

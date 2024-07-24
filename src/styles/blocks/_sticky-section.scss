@@ -1,7 +1,8 @@
 .sticky-section {
 
     display: flex;
-    justify-content: space-between;
+
+    column-gap: 70px;
 
     margin-bottom: 20px;
 
@@ -22,7 +23,7 @@
         display: flex;
         justify-content: space-between;
 
-        column-gap: 40px;
+        column-gap: 100px;
 
         @include desktop {
             column-gap: 60px;

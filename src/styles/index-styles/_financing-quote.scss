@@ -14,7 +14,7 @@
     &__info {
         @include appear('left', -20%, '', 0, 0, 0, 0.6s);
 
-        max-width: 89%;
+        max-width: 90%;
 
         @include mobile {
             max-width: 75%;

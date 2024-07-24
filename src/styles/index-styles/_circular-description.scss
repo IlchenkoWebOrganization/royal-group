@@ -12,6 +12,16 @@
         row-gap: 20px;
     }
 
+    &__text {
+        @include desktop {
+            max-width: 90%;
+        }
+
+        @include media-with-max(733px) {
+            max-width: 95%;
+        }
+    }
+
     &__number {
         @include font-settings(inherit, inherit, linear-gradient(89.53deg, #C3A9FF 12.17%, #591EFF 151.86%), true);
 
