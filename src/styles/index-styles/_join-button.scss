@@ -1,34 +1,16 @@
 .join-button {
     @include reset-button();
 
-    // @include hover {
-    //     background-color: rgba(124, 114, 255, 0.1);
+    @include hover {
+        background-color: rgba(124, 114, 255, 0.1);
 
-    //     border-color: rgba(124, 114, 255, 1);
+        border-color: rgba(124, 114, 255, 1);
 
-    //     box-shadow: 0 8px 16px rgba(124, 114, 255, 0.6);
+        box-shadow: 0 8px 16px rgba(124, 114, 255, 0.6);
 
-    //     transform: translateY(-3px);
-    //     transition: all 0.3s ease;
-
-    //     .join-button__circle {
-    //         background-color: rgba(124, 114, 255, 0.2);
-
-    //         box-shadow: 0 0 70px rgba(124, 114, 255, 0.8),
-    //                     0 0 90px rgba(124, 114, 255, 1),
-    //                     0 0 110px rgba(124, 114, 255, 0.6);
-
-    //         &-plus {
-    //             background-color: var(--color-dark);
-    //             color: var(--color-light);
-
-    //             &::before,
-    //             &::after { 
-    //                 background-color: rgba(124, 114, 255, 1);
-    //             }
-    //         }
-    //     }
-    // }
+        transform: translateY(-3px);
+        transition: all 0.3s ease;
+    }
 
     &--impact {
         @include media-with-max(1023px) {
