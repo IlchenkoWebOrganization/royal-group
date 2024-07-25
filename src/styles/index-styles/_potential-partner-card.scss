@@ -51,9 +51,14 @@
     &__button {
         align-self: flex-start;
 
+        @include media-with-max(500px) {
+            justify-content: space-between;
+            width: 130%;
+        }
+
         @include media-with-max(460px) {
             justify-content: space-between;
-            width: 140%;
+            width: 155%;
         }
         
     }
@@ -81,7 +86,7 @@
             margin-bottom: 0px;
         }
 
-        @include media-with-max(410px) {
+        @include media-with-max(470px) {
             font-size: 16px;
 
             min-width: 150%;

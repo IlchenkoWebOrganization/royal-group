@@ -214,4 +214,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // headerBtn.addEventListener('click', () => window.open('https://t.me/gigachat_bot', '_blank'))
 
+
+    window.addEventListener("orientationchange", function() {
+        if (window.innerWidth < 700 && window.orientation !== 0) {
+            document.body.innerHTML = '<div style="background-color: rgba(13, 17, 22, 1); color: rgba(230, 237, 243, 1); display: flex; justify-content: center; align-items: center; height: 100vh;"><h1>Сайт работает только в вертикальной ориентации! Пожалуйста, переверните устройство</h1></div>';
+        } else {
+            location.reload();
+        }
+    });
+
 });

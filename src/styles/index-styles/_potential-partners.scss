@@ -15,11 +15,12 @@
             column-gap: 20px;
         }
 
-        @include tablet {
-        }
-
         @include mobile {
             margin-left: 40px;
+        }
+
+        @include media-with-max(510px) {
+            margin-left: 25px;
         }
 
         @include media-with-max(638px) {

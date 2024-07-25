@@ -59,7 +59,7 @@ export default class AdaptiveSliderForThreeCards {
     onTouchStart(event) {
         this.startX = event.touches[0].clientX;
         this.isDragging = true;
-        this.sliderTrack.style.transition = 'none'; // Disable transitions during drag
+        this.sliderTrack.style.transition = 'none';
     }
 
     onTouchMove(event) {
@@ -84,6 +84,6 @@ export default class AdaptiveSliderForThreeCards {
             this.updateSliderPosition();
         }
 
-        this.sliderTrack.style.transition = ''; // Re-enable transitions
+        this.sliderTrack.style.transition = '';
     }
 }
