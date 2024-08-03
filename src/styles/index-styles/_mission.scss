@@ -188,11 +188,7 @@
     &__statistic {
         margin-left: 120px;
         margin-top: 80px;
-        margin-bottom: 90px;
-
-        @include mobile {
-            margin-bottom: 50px;
-        }
+        margin-bottom: 50px;
 
         @include media-with-max-and-min(1050px, 848px) {
             margin-left: 60px;
@@ -209,7 +205,16 @@
         }
     }
 
+    &__conclusion-devergence {
+        margin-bottom: 50px;
+
+        @include media-with-max(510px) {
+            margin-bottom: 40px;
+        }
+    }
+
     &__conclusion {
+        margin-top: 40px;
         margin-bottom: 150px;
 
         @include media-with-max(747px) {
