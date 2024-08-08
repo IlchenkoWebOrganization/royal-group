@@ -126,6 +126,16 @@
         }
     }
 
+    &__resume {
+        display: flex;
+        column-gap: 20px;
+
+        @include media-with-max(607px) {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+
     &__resume-item {
         flex: 1;
         padding-block: 25px;
@@ -136,14 +146,5 @@
 
         display: flex;
         align-items: center;
-
-        @include mobile {
-            padding-inline: 10px;
-        }
-
-        background: linear-gradient(106.05deg, #C5FFA9 6.86%, #1E78FF 156.63%);
-        background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
     }
 }
