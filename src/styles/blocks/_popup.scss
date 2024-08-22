@@ -32,6 +32,24 @@
     background-color: rgba(0,0,0,0.7);
     animation: fadeIn 0.5s;
 
+    &--contact-form {
+        .popup__content {
+            width: 40%;
+
+            @include media-with-max(1294px) {
+                width: 50%;
+            }
+
+            @include media-with-max(970px) {
+                width: 80%;
+            }
+    
+            @include media-with-max(670px) {
+                width: 98%;
+            }
+        }
+    }
+
     &--case {
         .popup__content {
             width: 67%;

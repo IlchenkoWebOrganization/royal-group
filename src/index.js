@@ -201,13 +201,13 @@ document.addEventListener('DOMContentLoaded', function () {
     burgerBtnManager()
 
 
-    // const joinBtns = document.querySelectorAll('.join-button');
+    const joinBtns = document.querySelectorAll('.join-button');
 
-    // joinBtns.forEach((btn) => {
-    //     btn.addEventListener('click', () => {
-    //         window.open('https://t.me/gigachat_bot', '_blank');
-    //     })
-    // })
+    const contactUsPopup = document.querySelector('#contactUsPopup')
+
+    joinBtns.forEach((btn) => {
+        new Popup(contactUsPopup, btn)
+    })
 
 
     // const headerBtn = document.querySelector('.header__button');

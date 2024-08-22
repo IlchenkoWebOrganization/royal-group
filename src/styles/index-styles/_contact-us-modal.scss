@@ -1,0 +1,96 @@
+.contact-us-modal {
+    background-color: rgba(22, 27, 34, 1);
+    
+    border-radius: 20px;
+
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        padding-inline: 56px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+
+        @include mobile {
+            padding-inline: 20px;
+        }
+
+        @include media-with-max(450px) {
+            padding-inline: 10px;
+        }
+    }
+
+    &__close {
+        @include reset-button();
+        box-flex-group: none;
+        align-self: flex-end;
+        font-size: 70px;
+
+        color: var(--color-light);
+
+        @include mobile {
+            font-size: 50px;
+        }
+
+        @include hover {
+            color: var(--color-gray);
+            transform: scale(1.2);
+        }
+    }
+
+    &__content {
+        font-size: 22px;
+        color: var(--color-gray);
+
+        row-gap: 40px;
+
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+
+    &__title {
+        max-width: 90%;
+        font-family: 'Manrope Light';
+        font-size: 32px;
+        color: var(--color-light);
+
+        @include mobile {
+            font-size: 24px;
+        }
+
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+
+        @include media-with-max(650px) {
+            input {
+                height: 40px;
+                border-radius: 7px;
+            }
+        }
+
+        input {
+            height: 55px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 13px;
+            padding: 10px;
+            background-color: var(--color-light);
+        }
+    }
+
+    &__tg-label {
+        margin-top: 20px;
+    }
+
+    &__form-button {
+        margin-top: 30px;
+    }
+}

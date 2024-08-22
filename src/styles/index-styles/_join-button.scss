@@ -12,6 +12,25 @@
         transition: all 0.3s ease;
     }
 
+    &--contact-form {
+        height: 55px;
+        border-radius: 15px;
+        padding-block: 20px;
+
+        @include media-with-max(650px) {
+            height: 45px;
+        }
+
+        .join-button__circle {
+            display: none;
+        }
+
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
     &--impact {
         @include media-with-max(1023px) {
 
