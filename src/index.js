@@ -203,16 +203,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const joinBtns = document.querySelectorAll('.join-button');
 
-    const contactUsPopup = document.querySelector('#contactUsPopup')
+    // const contactUsPopup = document.querySelector('#contactUsPopup')
 
     joinBtns.forEach((btn) => {
-        new Popup(contactUsPopup, btn)
+        btn.addEventListener('click', () => window.open('https://t.me/mrx_wb'))
     })
 
 
-    // const headerBtn = document.querySelector('.header__button');
+    const headerBtn = document.querySelector('.header__button');
 
-    // headerBtn.addEventListener('click', () => window.open('https://t.me/gigachat_bot', '_blank'))
+    headerBtn.addEventListener('click', () => window.open('https://t.me/mrx_wb'))
 
 
     window.addEventListener("orientationchange", function() {

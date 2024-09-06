@@ -15,6 +15,7 @@ export default class Popup {
     }
 
     closePopup() {
+        document.querySelector('.ellipse').style.display = "block";
         document.body.classList.remove('no-scroll');
         this.popup.classList.remove('fade-in');
         this.popup.querySelector('.popup__content').classList.remove('slide-in');
@@ -27,6 +28,7 @@ export default class Popup {
 
     openPopupListener() {
         this.openPopupBtn.addEventListener('click', () => {
+            document.querySelector('.ellipse').style.display = "none"
             document.body.classList.add('no-scroll');
             this.popup.classList.remove('fade-out');
             this.popup.querySelector('.popup__content').classList.remove('slide-out');

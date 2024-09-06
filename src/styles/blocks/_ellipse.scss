@@ -23,6 +23,7 @@
             width: 250vw;
         }
 
+        contain: layout;
         width: 200vw;
         height: 150vh;
         background: var(--color-dark);
@@ -46,6 +47,7 @@
             width: 150vw;
         }
 
+        contain: layout;
         width: 110vw;
         height: 70vh;
         background: var(--color-dark);
