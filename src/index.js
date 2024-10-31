@@ -206,13 +206,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // const contactUsPopup = document.querySelector('#contactUsPopup')
 
     joinBtns.forEach((btn) => {
-        btn.addEventListener('click', () => window.open('https://t.me/mrx_wb'))
+        btn.addEventListener('click', () => window.open('https://t.me/mikhail_jcb'))
     })
 
 
     const headerBtn = document.querySelector('.header__button');
 
-    headerBtn.addEventListener('click', () => window.open('https://t.me/mrx_wb'))
+    headerBtn.addEventListener('click', () => window.open('https://t.me/mikhail_jcb'))
 
 
     window.addEventListener("orientationchange", function() {
