@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '#heroLine'
     ]);
 
-    
+
     addAnimationsWithTrigger(animationController, '.numbers__content', [
         '#numbersLine',
     ]);
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '.circular-description__vector'
     ]);
 
-    
+
     addAnimationsWithTrigger(animationController, '.numbers__content', [
         '.ellipse__main',
         '.ellipse__shadow'
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    
+
     addAnimationsWithTrigger(animationController, '#potentialPartnersBlockTrigger', [
         '#potentialPartnersLine',
         '#potentialPartnersHeader',
@@ -206,16 +206,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // const contactUsPopup = document.querySelector('#contactUsPopup')
 
     joinBtns.forEach((btn) => {
-        btn.addEventListener('click', () => window.open('https://t.me/mikhail_jcb'))
+        btn.addEventListener('click', () => window.open('https://t.me/vlad_rlgp'))
     })
 
 
     const headerBtn = document.querySelector('.header__button');
 
-    headerBtn.addEventListener('click', () => window.open('https://t.me/mikhail_jcb'))
+    headerBtn.addEventListener('click', () => window.open('https://t.me/vlad_rlgp'))
 
 
-    window.addEventListener("orientationchange", function() {
+    window.addEventListener("orientationchange", function () {
         if (window.innerWidth < 700 && window.orientation !== 0) {
             document.body.innerHTML = '<div style="background-color: rgba(13, 17, 22, 1); color: rgba(230, 237, 243, 1); display: flex; justify-content: center; align-items: center; height: 100vh;"><h1>Сайт работает только в вертикальной ориентации! Пожалуйста, переверните устройство</h1></div>';
         } else {
